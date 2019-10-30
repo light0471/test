@@ -34,7 +34,13 @@
     "pages/about/test/filter",
     "pages/about/home/home",
     "pages/plugin/drawer/drawer",
-    "pages/plugin/verticalnav/verticalnav"
+    "pages/plugin/verticalnav/verticalnav",
+    "pages/living/cx/index",
+    "pages/living/cy/index",
+    "pages/living/qj/index",
+    "pages/living/yl/index",
+    "pages/setting/yjfk/index",
+    "pages/study/kb/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",

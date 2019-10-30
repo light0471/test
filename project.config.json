@@ -12,7 +12,11 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.6.4",
+<<<<<<< HEAD
 	"appid": "wxdbbbdce768796e7a",
+=======
+	"appid": "wxd4040cb20934b9da",
+>>>>>>> c8aef7b62cef6f0f42b2f1f0bdcfefebb4b3f8ed
 	"projectname": "demo",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -35,6 +39,10 @@
 		},
 		"game": {
 			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
 			"list": []
 		},
 		"miniprogram": {
@@ -239,6 +247,13 @@
 					"name": "4.3 --- filter：blur引起的ios花屏测试",
 					"pathName": "pages/about/test/filter",
 					"query": ""
+				},
+				{
+					"id": 33,
+					"name": "pages/living/cy/index",
+					"pathName": "pages/living/cy/index",
+					"query": "",
+					"scene": null
 				}
 			]
 		}
