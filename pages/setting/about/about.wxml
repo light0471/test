@@ -8,5 +8,6 @@
     <view class='margin-top-sm'><text decode="{{true}}">&nbsp;&nbsp;&nbsp;</text>本次培训主要包括项目管理、前端开发入门、移动开发流程、安卓开发技术、安卓开发实战技术、安卓开发项目综合实战、微信小程序实现。理论加实践的授课方式，让学员深入掌握Android开发的核心思想、各种技术和开发技巧，通过企业级移动开发项目实战，构建起完整的移动开发知识体系，培养安卓开发管理者思维。</view>
     <view class='margin-top-sm'><text decode="{{true}}">&nbsp;&nbsp;&nbsp;</text>作为参加本次培训的第四组，我们是来自广西的罗鑫，河南的索晨晨，辽宁的隋利新，北京的田澍，山西的王琪，安徽的吴水生，内蒙的王耀和辽宁的赵忠吉，我们共同完成了这个小程序。希望你能喜欢！</view>
     <view class='margin-top-sm'><text decode="{{true}}">&nbsp;&nbsp;&nbsp;</text>更多功能敬请期待！</view>
+    <view class='margin-top-sm'><text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>2019.11 移动开发四组于山西忻州</view>
   </view>
 </view>
