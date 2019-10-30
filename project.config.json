@@ -37,6 +37,10 @@
 			"currentL": -1,
 			"list": []
 		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
 			"current": 27,
 			"list": [
@@ -239,6 +243,13 @@
 					"name": "4.3 --- filter：blur引起的ios花屏测试",
 					"pathName": "pages/about/test/filter",
 					"query": ""
+				},
+				{
+					"id": 33,
+					"name": "pages/living/cy/index",
+					"pathName": "pages/living/cy/index",
+					"query": "",
+					"scene": null
 				}
 			]
 		}
