@@ -40,7 +40,8 @@
     "pages/living/qj/index",
     "pages/living/yl/index",
     "pages/setting/yjfk/index",
-    "pages/study/kb/index"
+    "pages/study/kb/index",
+    "pages/study/ja/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",
