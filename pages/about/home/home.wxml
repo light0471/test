@@ -43,7 +43,7 @@
     </view>
     
     <view class="cu-item arrow">
-      <navigator class="content" url="/pages/about/log/log" hover-class="none">
+      <navigator class="content" url="/pages/setting/setting/setting" hover-class="none">
         <text class="cuIcon-formfill text-green"></text>
         <text class="text-grey">设置</text>
       </navigator>
@@ -67,7 +67,7 @@
       </navigator>
     </view>
     <view class="cu-item arrow">
-      <navigator class="content" url="/pages/about/about/about" hover-class="none">
+      <navigator class="content" url="/pages/setting/about/about" hover-class="none">
         <image src="/images/logo.png" class="png" mode="aspectFit"></image>
         <text class="text-grey">关于</text>
       </navigator>

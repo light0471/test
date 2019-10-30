@@ -28,7 +28,6 @@
     "pages/plugin/indexes/indexes",
     "pages/plugin/gradual/gradual",
     "pages/plugin/animation/animation",
-    "pages/about/about/about",
     "pages/about/log/log",
     "pages/about/test/list",
     "pages/about/test/filter",
@@ -41,7 +40,8 @@
     "pages/living/yl/index",
     "pages/setting/yjfk/index",
     "pages/study/kb/index",
-    "pages/study/ja/index"
+    "pages/study/ja/index",
+    "pages/setting/about/about"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",
