@@ -15,29 +15,57 @@ const app = getApp();
 Page({
 
     data:{
+        ScreenBrightness: '',
 
-        fontSize:16
-
-    },
-
-    magnifyFontSize(){
-
-        this.setData({
-
-            fontSize:this.data.fontSize+2
-
-        })
+        fontSize:20
 
     },
 
-    shrinkFontSize(){
+    // magnifyFontSize(){
+    //
+    //     this.setData({
+    //
+    //         fontSize:this.data.fontSize+3
+    //
+    //     })
+    //
+    // },
+    //
+    // shrinkFontSize(){
+    //
+    //     this.setData({
+    //
+    //         fontSize:this.data.fontSize-3
+    //
+    //     })
+    //
+    // },
+    changeFontSize:function(e){
+        // var that= this;
 
         this.setData({
 
-            fontSize:this.data.fontSize-2
+            fontSize:parseInt(e.detail.value).toFixed()
 
         })
-
+    // wx.CanvasContext.font({value:parseInt(e.detail.value).toFixed(1)})
+},
+    //监听页面加载
+    changeScreenLight:function(e){
+        var that = this;
+        //滑动拉杆获得值
+        wx.setScreenBrightness({
+            value: parseFloat(e.detail.value).toFixed(1)
+        })
+        //给屏幕亮度赋值
+        wx.getScreenBrightness({
+            success: function(res) {
+                that.setData({
+                    ScreenBrightness: res.value
+                })
+            }
+        })
     }
+
 
 })

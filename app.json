@@ -41,7 +41,8 @@
     "pages/setting/yjfk/index",
     "pages/study/kb/index",
     "pages/study/ja/index",
-    "pages/setting/about/about"
+    "pages/setting/about/about",
+    "pages/setting/setting/setting"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",

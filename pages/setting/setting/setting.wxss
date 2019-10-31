@@ -25,3 +25,6 @@
   position: absolute;
   bottom: 0;
 }
+.title-fontsize{
+  font-size:26px;
+}

@@ -1,9 +1,33 @@
 <cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
     <view slot="backText">返回</view>
-    <view slot="content">关于</view>
+    <view slot="content">设置</view>
 </cu-custom>
-<view class="view" style="font-size:{{fontSize}}rpx">设置字体大小</view>
+<view class="action " >
+    <text class="cuIcon-title text-orange title-fontsize" >个性化设置</text>
+</view>
+<view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+        <view class="content">
+            <text class="cuIcon-circlefill text-grey"></text>
+            <text class="text-grey">设置字体大小</text>
+            <slider min="16" max="50" step="4" bindchange="changeFontSize"/>
+            <view>字体大小：{{fontSize}}</view>
+            <view class="view" style="font-size:{{fontSize}}rpx">示例文字</view>
+        </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+        <view class="content">
+            <image src="/images/logo.png" class="png" mode="aspectFit"></image>
+            <text class="text-grey">设置屏幕亮度</text>
+            <slider min="0" max="1" step="0.1"bindchange="changeScreenLight"/>
+            <view>屏幕亮度：{{ScreenBrightness}}</view>
+        </view>
+    </view>
+</view>
 
-<button class="btn" type="default" bindtap="magnifyFontSize">点击我字体变大</button>
 
-<button class="btn" type="default" bindtap="shrinkFontSize">点击我字体变小</button>
+<!--<button class="btn" type="default" bindtap="magnifyFontSize">点击我字体变大</button>-->
+
+<!--<button class="btn" type="default" bindtap="shrinkFontSize">点击我字体变小</button>-->
+
+
