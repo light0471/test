@@ -42,7 +42,8 @@
     "pages/study/kb/index",
     "pages/study/ja/index",
     "pages/setting/about/about",
-    "pages/setting/setting/setting"
+    "pages/setting/setting/setting",
+    "pages/living/yl/ylupdate/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",
