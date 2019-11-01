@@ -10,6 +10,11 @@ var config = {
     // 登录地址，用于建立会话
     list_yl: `${host}/list_yl`,
     save_yl: `${host}/save_yl`,
+    list_cx: `${host}/list_cx`,
+    save_cx: `${host}/save_cx`,
+    count_cx: `${host}/count_cx`,
+    list_qd: `${host}/list_qd`,
+    save_qd: `${host}/save_qd`,
   }
 };
 
