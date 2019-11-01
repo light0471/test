@@ -42,7 +42,12 @@
     "pages/study/kb/index",
     "pages/study/ja/index",
     "pages/study/homework/index",
-    "pages/study/signin/index"
+    "pages/study/signin/index",
+    "pages/setting/about/about",
+    "pages/setting/setting/setting",
+    "pages/living/yl/ylupdate/index",
+    "pages/living/cx/cxupdate/index",
+    "pages/living/cx/tj/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",

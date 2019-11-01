@@ -26,3 +26,16 @@
   position: absolute;
   bottom: 0;
 }
+.title-fontsize{
+  font-size:26px;
+}
+
+.page .header .h-skin {
+
+  color: #060505;
+
+  padding: 0 32 rpx;
+
+  font-size: 40 rpx;
+
+}

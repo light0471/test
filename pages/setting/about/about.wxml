@@ -1,12 +1,39 @@
-<cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">关于</view></cu-custom>
-<view class='margin-xl bg-white padding-xl radius shadow-lg'>
-  <view class='text-center margin-bottom text-lg  text-grey'>关于学习助手小程序</view>
-  <view class='text-content'>
-    <view>老师们、同学们：</view>
-    <view><text decode="{{true}}">&nbsp;&nbsp;&nbsp;欢迎使用学习助手小程序！</text></view>
-    <view class='margin-top-sm'><text decode="{{true}}">&nbsp;&nbsp;&nbsp;为了落实公司战略和互联网化转型要求，根据2019年IT人才培养工作安排 ，集团公司于8月20日开始举办2019年“引擎计划”第三期培训班</text></view>
-    <view class='margin-top-sm'><text decode="{{true}}">&nbsp;&nbsp;&nbsp;</text>本次培训主要包括项目管理、前端开发入门、移动开发流程、安卓开发技术、安卓开发实战技术、安卓开发项目综合实战、微信小程序实现。理论加实践的授课方式，让学员深入掌握Android开发的核心思想、各种技术和开发技巧，通过企业级移动开发项目实战，构建起完整的移动开发知识体系，培养安卓开发管理者思维。</view>
-    <view class='margin-top-sm'><text decode="{{true}}">&nbsp;&nbsp;&nbsp;</text>作为参加本次培训的第四组，我们是来自广西的罗鑫，河南的索晨晨，辽宁的隋利新，北京的田澍，山西的王琪，安徽的吴水生，内蒙的王耀和辽宁的赵忠吉，我们共同完成了这个小程序。希望你能喜欢！</view>
-    <view class='margin-top-sm'><text decode="{{true}}">&nbsp;&nbsp;&nbsp;</text>更多功能敬请期待！</view>
-  </view>
+<view class='page' id='{{SkinStyle}}'>
+    <view class='header'>
+        <view class='h-skin iconfont {{SkinStyle!=="normal"?"icon-moon":"icon-sun"}}' bindtap='bgBtn'></view>
+    </view>
+    <cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
+        <view slot="backText">返回</view>
+        <view slot="content">关于</view>
+    </cu-custom>
+    <view class='margin-xl bg-white padding-xl radius shadow-lg'>
+        <view class='text-center margin-bottom text-lg  text-grey'>关于学习助手小程序</view>
+        <view class='text-content'>
+            <view>老师们、同学们：</view>
+            <view>
+                <text decode="{{true}}">&nbsp;&nbsp;&nbsp;欢迎使用学习助手小程序！</text>
+            </view>
+            <view class='margin-top-sm'>
+                <text decode="{{true}}">&nbsp;&nbsp;&nbsp;为了落实公司战略和互联网化转型要求，根据2019年IT人才培养工作安排
+                    ，集团公司于8月20日开始举办2019年“引擎计划”第三期培训班
+                </text>
+            </view>
+            <view class='margin-top-sm'>
+                <text decode="{{true}}">&nbsp;&nbsp;&nbsp;</text>
+                本次培训主要包括项目管理、前端开发入门、移动开发流程、安卓开发技术、安卓开发实战技术、安卓开发项目综合实战、微信小程序实现。理论加实践的授课方式，让学员深入掌握Android开发的核心思想、各种技术和开发技巧，通过企业级移动开发项目实战，构建起完整的移动开发知识体系，培养安卓开发管理者思维。
+            </view>
+            <view class='margin-top-sm'>
+                <text decode="{{true}}">&nbsp;&nbsp;&nbsp;</text>
+                作为参加本次培训的第四组，我们是来自广西的罗鑫，河南的索晨晨，辽宁的隋利新，北京的田澍，山西的王琪，安徽的吴水生，内蒙的王耀和辽宁的赵忠吉，我们共同完成了这个小程序。希望你能喜欢！
+            </view>
+            <view class='margin-top-sm'>
+                <text decode="{{true}}">&nbsp;&nbsp;&nbsp;</text>
+                更多功能敬请期待！
+            </view>
+            <view class='margin-top-sm'>
+                <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+                2019.11 移动开发四组于山西忻州
+            </view>
+        </view>
+    </view>
 </view>
