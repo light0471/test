@@ -1,0 +1,14 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">签到</view>
+</cu-custom>
+<calendar 
+active-coloro="active-coloro"
+active-colort="active-colort"
+dotcolor-o="dotcolor-o" 
+dotcolor-t="dotcolor-t"
+mystatus="{{mystatus}}" 
+circle_show="{{circle_show}}" 
+pitch_on="circle" 
+bindselectDate='selectDate' />
+<view class="message">{{message}}</view>
