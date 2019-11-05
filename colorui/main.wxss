@@ -2018,14 +2018,14 @@ button.icon.lg {
 .cu-timeline .cu-time {
 	width: 120rpx;
 	text-align: center;
-	padding: 20rpx 0;
+	padding: 15rpx 0;
 	font-size: 26rpx;
 	color: #888;
 	display: block;
 }
 
 .cu-timeline>.cu-item {
-	padding: 30rpx 30rpx 30rpx 120rpx;
+	padding: 20rpx 30rpx 30rpx 120rpx;
 	position: relative;
 	display: block;
 	z-index: 0;

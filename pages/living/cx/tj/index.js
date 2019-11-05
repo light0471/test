@@ -76,7 +76,9 @@ Page({
     ec: {
     }
   },
-
+  back() {
+    wx.navigateBack();
+  },
   onReady() {
   },
   onLoad: function (options) {

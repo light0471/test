@@ -1,0 +1,21 @@
+/* pages/study/ja/index.wxss */
+/*签到 */
+.dotcolor-o{
+    background-color: #188be4 !important;  
+}
+/* 未签到  */
+.dotcolor-t{
+    background-color: #FF7F50 !important;  
+}
+.active-coloro {
+  color: #fff;
+  background: #188be4;
+}
+.active-colort {
+    color: #fff;
+    background: #b8d5eb;
+  }
+  .message{
+    padding: 10rpx 10rpx 10rpx 25rpx;
+    font-size: 13px;
+  }

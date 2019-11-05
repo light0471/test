@@ -17,6 +17,9 @@ Page({
     search_key: '',
     lists: []
   },
+  back() {
+    wx.navigateBack();
+  },
   // 生命周期函数--监听页面加载
   onLoad: function (options) {
     var that = this;
@@ -64,6 +67,7 @@ Page({
       data: params
     }, (res) => {
       if (res.data.errcode == 0) {
+        console.log('--', res)
         that.setData({
           lists: res.data.items
         })
@@ -72,12 +76,12 @@ Page({
     })
   },
   new_yl(e) {
-    wx.redirectTo({
+    wx.navigateTo({
       url: './cxupdate/index',
     })
   },
   init_data(e) {
-    wx.redirectTo({
+    wx.navigateTo({
       url: './tj/index',
     })
   }
