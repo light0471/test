@@ -227,6 +227,7 @@
 
 .cuIcon-scan:before {
 	content: "\e689";
+  font-size: 76rpx;
 }
 
 .cuIcon-settings:before {
