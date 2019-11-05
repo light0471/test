@@ -1,8 +1,6 @@
 <view class='page' id='{{SkinStyle}}'>
     <view class='header'>
-
         <view class='h-skin iconfont {{SkinStyle!=="normal"?"icon-moon":"icon-sun"}}' bindtap='bgBtn'></view>
-
     </view>
     <cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
         <view slot="backText">返回</view>
@@ -21,17 +19,22 @@
                 <view class="view" style="font-size:{{fontSize}}rpx">示例文字</view>
             </view>
         </view>
+    </view>
+    <view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
         <view class="cu-item {{menuArrow?'arrow':''}}">
             <view class="content">
-                <image src="/images/logo.png" class="png" mode="aspectFit"></image>
+                <text class="cuIcon-creative text-grey"></text>
                 <text class="text-grey">设置屏幕亮度</text>
                 <slider min="0" max="1" step="0.1" bindchange="changeScreenLight"/>
-                <view>屏幕亮度：{{ScreenBrightness}}</view>
+                <view class="view">屏幕亮度：{{ScreenBrightness}}</view>
             </view>
         </view>
+    </view>
+    <view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
         <view class="cu-item {{menuArrow?'arrow':''}}">
-            <view class='action'>
-                <text class='cuIcon-title text-grey'>设置日间/夜间主题</text>
+            <view class='content'>
+                <text class="cuIcon-evaluate_fill text-grey"></text>
+                <text class='text-grey'>设置日间/夜间主题</text>
             </view>
             <view class='action'>
                 <switch class='btn1' bindchange='bgBtn'></switch>
