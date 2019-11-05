@@ -70,8 +70,11 @@ Page({
       console.log(res)
     })
   },
+  back() {
+    wx.navigateBack();
+  },
   new_yl(e) {
-    wx.redirectTo({
+    wx.navigateTo({
       url: './ylupdate/index',
     })
   }
