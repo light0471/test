@@ -18,14 +18,10 @@
     "pages/setting/about/about",
     "pages/setting/setting/setting",
     "pages/living/yl/ylupdate/index",
-<<<<<<< HEAD
-    "pages/living/cx/cxupdate/index"
-=======
     "pages/living/cx/cxupdate/index",
     "pages/living/cx/tj/index",
     "pages/setting/yjfk/yjfk/index",
     "pages/setting/yjfk/index"
->>>>>>> 517f5be44422637925db14f510ff6ccd49c99856
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",
