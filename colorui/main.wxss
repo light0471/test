@@ -3939,3 +3939,7 @@ scroll-view.cu-steps .cu-item {
 .lines-white {
 	color: var(--white);
 }
+
+/*.title-fontsize{*/
+/*font-size: 30px;*/
+/*}*/

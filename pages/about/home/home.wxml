@@ -1,20 +1,8 @@
 <scroll-view scroll-y class="scrollPage">
   <view class="UCenter-bg">
-    <image src="/images/logo.png" class="png" mode="widthFix"></image>
-    <view class="text-xl">学习助手
-      <text class="text-df">v1.0</text>
-    </view>
-    <view class="margin-top-sm">
-      <text>By:team4</text>
-    </view>
+    <open-data type="userAvatarUrl"  class="userinfo-avatar png" mode="widthFix"></open-data>
+    <open-data class="text-xl" type="userNickName" lang="zh_CN"></open-data>
   </view>
-  <!-- <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view> -->
   
   <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
 
@@ -26,20 +14,21 @@
     </view>
     
     <view class="cu-item arrow">
-      <navigator class="content" url="/pages/setting/yjfk/index" hover-class="none">
-        <text class="cuIcon-writefill text-cyan"></text>
-        <text class="text-grey">意见反馈</text>
-      </navigator>
-    </view>
-    <view class="cu-item arrow">
-      <navigator class="content" url="/pages/about/log/log" hover-class="none">
+      <navigator class="content" url="/pages/setting/setting/setting" hover-class="none">
         <text class="cuIcon-formfill text-green"></text>
         <text class="text-grey">设置</text>
       </navigator>
     </view>
 
     <view class="cu-item arrow">
-      <navigator class="content" url="/pages/about/about/about" hover-class="none">
+      <navigator class="content" url="/pages/setting/yjfk/index" hover-class="none">
+        <text class="cuIcon-writefill text-cyan"></text>
+        <text class="text-grey">意见反馈</text>
+      </navigator>
+    </view>
+
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/setting/about/about" hover-class="none">
         <image src="/images/logo.png" class="png" mode="aspectFit"></image>
         <text class="text-grey">关于</text>
       </navigator>

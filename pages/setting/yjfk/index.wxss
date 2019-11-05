@@ -1,1 +1,10 @@
 /* pages/setting/yjfk/index.wxss */
+.one{
+  justify-content:flex-end
+}
+.two{
+  font-size: 20rpx
+}
+.three{
+   font-size: 30rpx
+}
