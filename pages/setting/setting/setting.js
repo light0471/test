@@ -1,6 +1,5 @@
 var app = getApp();
 Page({
-
     data: {
         StatusBar: app.globalData.StatusBar,
         CustomBar: app.globalData.CustomBar,
@@ -11,21 +10,13 @@ Page({
     },
     onLoad: function () {
         var that = this;
-
         wx.getStorage({
-
             key: 'skins',
-
             success: function (res) {
-
                 that.setData({
-
                     SkinStyle: res.data
-
                 })
-
             },
-
         })
     },
     pageBack() {
@@ -55,44 +46,24 @@ Page({
         })
     },
     bgBtn: function () {
-
         if (this.data.SkinStyle === "normal") {
-
             app.globalData.skin = "dark"; //设置app（）中皮肤的类型
-
             this.setData({
-
                 SkinStyle: app.globalData.skin //设置SkinStyle的值
-
             })
-
             wx.setStorage({   //设置storage
-
                 key: 'skins',
-
                 data: app.globalData.skin,
-
             })
-
         } else {
-
             app.globalData.skin = "normal";
-
             this.setData({
-
                 SkinStyle: "normal"
-
             })
-
             wx.setStorage({
-
                 key: 'skins',
-
                 data: app.globalData.skin,
-
             })
-
         }
-
     }
 })

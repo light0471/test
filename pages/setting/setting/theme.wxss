@@ -1,12 +1,7 @@
-
 #dark {
-
     background: #555555;
-
 }
 
 #dark .header .h-skin {
-
     color: white;
-
 }

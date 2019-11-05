@@ -16,6 +16,8 @@ var config = {
     count_cx: `${host}/count_cx`,
     list_qd: `${host}/list_qd`,
     save_qd: `${host}/save_qd`,
+    list_yjfk: `${host}/list_yjfk`,
+    save_yjfk: `${host}/save_yjfk`,
   }
 };
 
