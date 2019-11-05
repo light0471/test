@@ -79,10 +79,5 @@ Page({
     wx.navigateTo({
       url: './cxupdate/index',
     })
-  },
-  init_data(e) {
-    wx.navigateTo({
-      url: './tj/index',
-    })
   }
 })

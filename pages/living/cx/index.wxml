@@ -11,7 +11,6 @@
     <view class="action">
       <!-- <button class="cu-btn bg-gradual-green shadow-blur round" bindtap="search_data">搜索</button> -->
       <button class="cu-btn bg-gradual-blue shadow-blur round" bindtap="new_yl">创建</button>
-      <button class="cu-btn bg-gradual-green shadow-blur round" bindtap="init_data">统计信息</button>
     </view>
   </view>
   <view class="cu-bar bg-white solid-bottom margin-top">
