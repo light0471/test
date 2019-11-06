@@ -8,6 +8,7 @@ Page({
         fontSize: 20,
         SkinStyle: "normal"
     },
+
     onLoad: function () {
         var that = this;
         wx.getStorage({
@@ -19,11 +20,13 @@ Page({
             },
         })
     },
+
     pageBack() {
         wx.navigateBack({
             delta: 1
         })
     },
+
     changeFontSize: function (e) {
         this.setData({
             fontSize: parseInt(e.detail.value).toFixed()
@@ -45,6 +48,7 @@ Page({
             }
         })
     },
+
     bgBtn: function () {
         if (this.data.SkinStyle === "normal") {
             app.globalData.skin = "dark"; //设置app（）中皮肤的类型

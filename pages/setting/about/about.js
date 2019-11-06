@@ -6,6 +6,7 @@ Page({
         ColorList: app.globalData.ColorList,
         display: ''
     },
+
     onLoad: function () {
         var that = this;
         wx.getStorage({
@@ -17,21 +18,25 @@ Page({
             },
         })
     },
+
     pageBack() {
         wx.navigateBack({
             delta: 1
         });
     },
+
     showview: function () {
         this.setData({
             display: "block"
         })
     },
+
     hideview: function () {
         this.setData({
             display: "none"
         })
     },
+
     slx: function () {
         wx.showToast({
             "title": "VX:thanks214！"
