@@ -1,4 +1,4 @@
-// pages/study/kb/index.js
+// pages/living/dayoff/index.js
 Page({
 
   /**

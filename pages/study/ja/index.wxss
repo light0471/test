@@ -1,1 +1,5 @@
 /* pages/study/ja/index.wxss */
+.img{
+  width: 100%;
+  height: 400rpx;
+}

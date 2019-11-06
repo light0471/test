@@ -1,0 +1,36 @@
+<scroll-view scroll-x class="bg-white nav">
+  <view class="flex text-center">
+    <view
+      class="cu-item flex-sub {{ index == TabCur ? 'text-orange cur' : '' }}"
+      wx:for="{{ courses1 }}"
+      wx:key
+      bindtap="tabSelect"
+      data-id="{{ index }}"
+    >
+      {{ item.coursename }}
+    </view>
+  </view>
+</scroll-view>
+<view>
+  <view class="scroll_view">
+  点击课程查看教室地点！！！
+  </view>
+</view>
+<view class="cu-bar bg-white solid-bottom margin-top">
+  <view class="action">
+    <text class="cuIcon-discover text-green "></text> 课程列表
+  </view>
+</view>
+<view class="cu-list menu ">
+  <view
+    class="cu-item "
+    wx:for="{{ courses1[TabCur].coursedetail }}"
+    wx:for-id="idx"
+    wx:for-item="citm"
+  >
+    <view class="content">
+      <text class="cuIcon-circlefill text-blue"></text>
+      <text class="text-grey" bindtap="findloc">{{ citm }}</text>
+    </view>
+  </view>
+</view>

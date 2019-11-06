@@ -1,8 +1,8 @@
 {
   "usingComponents": {},
-  "navigationStyle":"default",
+  "navigationStyle": "default",
   "backgroundTextStyle": "light",
   "navigationBarBackgroundColor": "#fff",
-  "navigationBarTitleText": "课件下载",
+  "navigationBarTitleText": "课程表",
   "navigationBarTextStyle": "black"
 }
