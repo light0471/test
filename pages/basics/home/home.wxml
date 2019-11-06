@@ -1,11 +1,105 @@
 <scroll-view scroll-y class="scrollPage">
-  <image src='/images/BasicsBg.png' mode='widthFix' class='png' style='width:100%;height:486rpx'></image>
-  <view class='nav-list'>
-    <navigator open-type="navigate" hover-class='none' url="/pages/basics/{{item.name}}/{{item.name}}" class="nav-li bg-{{item.color}}" wx:for="{{elements}}" wx:key>
-      <view class="nav-title">{{item.title}}</view>
-      <view class="nav-name">{{item.name}}</view>
-      <text class='cuIcon-{{item.icon}}'></text>
-    </navigator>
+  <cu-custom bgColor="bg-gradual-blue" ><view slot="content">首页</view>
+</cu-custom>
+
+<view class="cu-bar tabbar bg-white">
+    <view class="search">
+      <view class="df search_arr">
+        <icon class="searchcion" size='16' type='search'></icon>
+        <input class="sousuo" disabled placeholder="请输入需要搜索的内容" bindtap='search'/>
+      </view>
+    </view>
+    <view class="action" >
+<view class="cu-item">
+<text auto-focus placeholder="" class="cuIcon-scan lg text-blue" bindtap='click'/>
+</view>
+</view>
+</view>
+
+<view class='swiper_image'>
+    <swiper indicator-dots="true" autoplay="true" interval="5000" duration="500" circular="true" indicator-color="white" indicator-active-color="red">
+      <swiper-item  wx:for="{{imgUrls}}" wx:key='a'>
+        <navigator url='{{item.link}}'>
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill"></image>
+        </navigator> 
+      </swiper-item>
+    </swiper>
   </view>
-  <view class='cu-tabbar-height'></view>
+
+  <view class="cu-bar bg-white">
+    <view class="action">
+      <text class="cuIcon-title text-green"></text>
+      <text class="text-xl text-bold">消息通告栏</text>
+    </view>
+  </view>
+
+<swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="3000">
+    <block wx:for="{{inforList}}" wx:key>
+    <navigator url="{{item.url}}" open-type="navigate">
+        <swiper-item>
+          <view class="swiper_item">{{item.title}}</view>
+        </swiper-item>
+      </navigator>
+    </block>
+  </swiper>
+
+  <view class="cu-bar bg-white">
+    <view class="action" >
+      <text class="cuIcon-title text-green"></text>
+      <text class="text-xl text-bold">学院新闻</text>
+    </view>
+  </view>
+<view class="cu-card article {{isCard?'no-card':''}}">
+  <view class="cu-item shadow" bindtap="gotonew">
+    <view class="title">
+      <view class="text-cut">山西联通顿村培训中心介绍</view>
+    </view>
+    <view class="content">
+      <image src="https://mmbiz.qpic.cn/mmbiz_jpg/5DbGFKQv0Xs7IqF3cdaL5HUNOGJ6266Zjmb0b20h3BcWcRHhq59HfNmo9pDZpQTHgibJWuznBzYJibaZY0LlP9aw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content"> 山西联通顿村培训有限公司（原山西邮电培训中心），坐落于享有“华北第一泉”顿村温泉度假村，酒店紧邻顿村高速出口，培训中心主要以会议接待、餐饮、住宿、游泳洗浴为主。</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">培训中心</view>
+          <view class="cu-tag bg-green light sm round">服务</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cu-card article {{isCard?'no-card':''}}">
+  <view class="cu-item shadow" >
+    <view class="title">
+      <view class="text-cut">移动/联通/电信宣布商用5G！套餐一览</view>
+    </view>
+    <view class="content">
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572498099019&di=4656858a3bac1c9494dc5b435dd711da&imgtype=0&src=http%3A%2F%2Fn.sinaimg.cn%2Ftech%2Fcrawl%2F185%2Fw550h435%2F20191031%2F2b34-ihqyuym6861210.jpg" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content"> 11月1日，三大运营商将正式上线5G商用套餐。广大网友最想了解的莫过于三大运营商即将推出的5G套餐。</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">5G</view>
+          <view class="cu-tag bg-green light sm round">联通</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cu-card article {{isCard?'no-card':''}}">
+  <view class="cu-item shadow">
+    <view class="title">
+      <view class="text-cut">国庆盛典背后的联通七大亮点</view>
+    </view>
+    <view class="content">
+      <image src="http://www.chinaunicom.com.cn/resource/group1/M01/00/16/wKjcAl2T3ISAdxNKAATNaLrr2j0098.png" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content"> 当全国人民收看中央广播电视总台等媒体的4K超高清画面时，很多人并不知道：在盛况的背后有一张强大的通信网络在全力支撑，有成百上千的中国联通北京市分公司的员工在盛典前后昼夜奋战，保障了整个活动的万无一失。</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">国庆</view>
+          <view class="cu-tag bg-green light sm round">联通</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='cu-tabbar-height'></view>
 </scroll-view>

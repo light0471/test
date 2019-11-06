@@ -3,6 +3,7 @@
  */
 
 var host = 'http://10.52.200.165:3000';
+// var host = 'http://192.168.43.49:3000';
 
 var config = {
   // 下面的地址配合云端 Demo 工作
@@ -15,6 +16,8 @@ var config = {
     count_cx: `${host}/count_cx`,
     list_qd: `${host}/list_qd`,
     save_qd: `${host}/save_qd`,
+    list_yjfk: `${host}/list_yjfk`,
+    save_yjfk: `${host}/save_yjfk`,
   }
 };
 

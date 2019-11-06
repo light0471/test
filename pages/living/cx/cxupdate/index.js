@@ -15,6 +15,9 @@ Page({
     textareaAValue: '',
     title: ''
   },
+  back() {
+    wx.navigateBack();
+  },
   onLoad: function (options) {
     var that = this;
     let myDate = new Date()

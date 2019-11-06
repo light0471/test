@@ -1,17 +1,16 @@
 <scroll-view scroll-y class="DrawerPage {{modalName=='viewModal'?'show':''}}">
-  <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText">返回</view>
+  <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText" bindtap="back">返回</view>
     <view slot="content">出行</view>
   </cu-custom>
 
   <view class="cu-bar bg-white search fixed" style="top:{{CustomBar}}px;">
     <view class="search-form round">
-      <text class="cuIcon-search"></text>
-      <input type="text" placeholder="输入搜索的关键词" confirm-type="search" bindinput="inputTyping" bindconfirm="search_data"></input>
+     <text class="cuIcon-search"></text>
+     <input type="text" placeholder="输入搜索的关键词" confirm-type="search" bindinput="inputTyping" bindconfirm="search_data"></input>
     </view>
     <view class="action">
       <!-- <button class="cu-btn bg-gradual-green shadow-blur round" bindtap="search_data">搜索</button> -->
       <button class="cu-btn bg-gradual-blue shadow-blur round" bindtap="new_yl">创建</button>
-      <button class="cu-btn bg-gradual-green shadow-blur round" bindtap="init_data">统计信息</button>
     </view>
   </view>
   <view class="cu-bar bg-white solid-bottom margin-top">

@@ -1,7 +1,0 @@
-<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText">返回</view>
-  <view slot="content">出行统计</view>
-</cu-custom>
-<view class="container">
-  <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}"
-  bind:init="echartInit"></ec-canvas>
-</view>

@@ -47,6 +47,9 @@ Page({
       title: e.detail.value
     });
   },
+  back() {
+    wx.navigateBack();
+  },
   release(e) {
     let params = {
       title: this.data.title,
@@ -61,9 +64,7 @@ Page({
     }, (res) => {
       if (res.data.errcode == 0) {
         // 跳转
-        wx.redirectTo({
-          url: '../index',
-        })
+        wx.navigateBack();
       }
       console.log(res)
     })
