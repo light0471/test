@@ -1,7 +1,7 @@
 {
   "usingComponents": {
     "basics": "/pages/basics/home/home",
-    "component": "/pages/component/home/home",
+    "study": "/pages/study/home/home",
     "living": "/pages/living/home/home",
     "about": "/pages/about/home/home"
   }

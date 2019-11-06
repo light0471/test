@@ -1,5 +1,5 @@
 <basics wx:if="{{PageCur=='basics'}}"></basics>
-<component wx:if="{{PageCur=='component'}}"></component>
+<study wx:if="{{PageCur=='study'}}"></study>
 <living wx:if="{{PageCur=='living'}}"></living>
 <about wx:if="{{PageCur=='about'}}"></about>
 <view class="cu-bar tabbar bg-white shadow foot">
@@ -9,11 +9,11 @@
     </view>
     <view class="{{PageCur=='basics'?'text-green':'text-gray'}}">首页</view>
   </view>
-  <view class="action" bindtap="NavChange" data-cur="component">
+  <view class="action" bindtap="NavChange" data-cur="study">
     <view class='cuIcon-cu-image'>
-      <image src="/images/tabbar/component{{PageCur=='component'?'_cur':''}}.png"></image>
+      <image src="/images/tabbar/study{{PageCur=='study'?'_cur':''}}.png"></image>
     </view>
-    <view class="{{PageCur=='component'?'text-green':'text-gray'}}">学习</view>
+    <view class="{{PageCur=='study'?'text-green':'text-gray'}}">学习</view>
   </view>
   <view class="action" bindtap="NavChange" data-cur="living">
     <view class='cuIcon-cu-image'>
