@@ -25,9 +25,9 @@
             <view class='margin-top-sm'>
                 <text decode="{{true}}">&nbsp;&nbsp;&nbsp;</text>
                 作为参加本次培训的第四组，我们是来自广西的罗鑫，河南的索晨晨，辽宁的
-                <text bindtap="slx">隋利新</text>
+                <text bindtap="showSlx">隋利新</text>
                 ，北京的
-                <button bindtap="showview" style='font-size:24rpx'>田澍</button>
+                <button bindtap="showView" style='font-size:24rpx'>田澍</button>
                 ，山西的王琪，安徽的吴水生，内蒙的王耀和辽宁的赵忠吉，我们共同完成了这个小程序。希望你能喜欢！
             </view>
             <view class='margin-top-sm'>
@@ -41,6 +41,6 @@
         </view>
     </view>
     <view class="bg" style='display:{{display}}'></view>
-    <view class="show" style='display:{{display}}'>我的微信号:bjtian151082
+    <view class="show" style='display:{{display}}' bindtap="hideView">我的微信号:bjtian151082
     </view>
 </view>

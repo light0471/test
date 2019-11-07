@@ -37,7 +37,7 @@
                 <text class='text-grey'>设置日间/夜间主题</text>
             </view>
             <view class='action'>
-                <switch class='btn1' bindchange='bgBtn'></switch>
+                <switch bindchange='bgBtn'></switch>
             </view>
         </view>
     </view>

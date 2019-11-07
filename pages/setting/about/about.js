@@ -25,19 +25,19 @@ Page({
         });
     },
 
-    showview: function () {
+    showView: function () {
         this.setData({
             display: "block"
         })
     },
 
-    hideview: function () {
+    hideView: function () {
         this.setData({
             display: "none"
         })
     },
 
-    slx: function () {
+    showSlx: function () {
         wx.showToast({
             "title": "VX:thanks214！"
         })
