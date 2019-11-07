@@ -8,12 +8,23 @@ Page({
   data: {
     base64: "",
     token: "",
-    msg: null
+    msg: null,
+    windowWidth: ''
+  },
+  onLoad: function (options) {
+    let _this = this
+    wx.getSystemInfo({
+      success: function (res) {
+        _this.setData({
+          windowWidth : res.windowWidth
+        })
+      }
+    })
   },
   upload_sb () {
     //acess_token获取
+    console.log('222222222222222222')
     var that = this;
-    const ctx = wx.createCameraContext()
     wx.request({
       url: 'https://aip.baidubce.com/oauth/2.0/token', //真实的接口地址
       data: {
@@ -73,6 +84,7 @@ Page({
     ctx.takePhoto({
       quality: 'high',
       success: (res) => {
+        console.log('1111111111111111111')
         this.setData({
           src: res.tempImagePath
         })
