@@ -25,18 +25,21 @@ Page({
         });
     },
 
+    //显示窗口
     showView: function () {
         this.setData({
             display: "block"
         })
     },
 
+    //隐藏窗口
     hideView: function () {
         this.setData({
             display: "none"
         })
     },
 
+    //显示toast
     showSlx: function () {
         wx.showToast({
             "title": "VX:thanks214！"

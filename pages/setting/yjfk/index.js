@@ -22,6 +22,14 @@ Page({
   onLoad: function (options) {
     var that = this;
     this.getList()
+      wx.getStorage({
+          key: 'skins',
+          success: function (res) {
+              that.setData({
+                  SkinStyle: res.data
+              })
+          },
+      })
   },
   getUserInfo: function (e) {
     console.log("===="+e)

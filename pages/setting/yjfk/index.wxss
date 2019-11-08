@@ -1,4 +1,5 @@
 /* pages/setting/yjfk/index.wxss */
+@import "../setting/com.wxss";
 .one{
   justify-content:flex-end
 }
