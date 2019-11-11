@@ -12,6 +12,7 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     TabCur: 1,
     scrollLeft: 0,
+    search_key: '',
     lists: []
   },
 
@@ -56,9 +57,18 @@ Page({
       scrollLeft: (e.currentTarget.dataset.id - 1) * 60
     })
   },
+  inputTyping: function (e) {
+    this.setData({
+      search_key: e.detail.value
+    });
+  },
+  search_data: function (e) {
+    console.log("--", this.data.search_key)
+    this.getList()
+  },
   getList: function (e) {
     let that = this
-    let params = {}
+    let params = { search_key: this.data.search_key}
     http.post({
       url: config.service.list_yjfk,
       data: params
@@ -73,7 +83,7 @@ Page({
   },
   
   creatyj(e) {
-    wx.redirectTo({
+    wx.navigateTo({
       url: './yjfk/index',
     })
   },

@@ -9,3 +9,6 @@
 .three{
    font-size: 30rpx
 }
+.bgcolor{
+  background-color: #13A9CB
+}

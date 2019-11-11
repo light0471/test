@@ -2,7 +2,9 @@
   <view slot="backText">返回</view>
   <view slot="content">签到</view>
 </cu-custom>
+
 <calendar active-coloro="active-coloro" active-colort="active-colort" dotcolor-o="dotcolor-o" dotcolor-t="dotcolor-t" mystatus1="{{mystatus}}" mystatus="{{my_status}}" circle_show="{{circle_show}}" pitch_on="circle" bindselectDate='selectDate'></calendar>
 
 <view class="message">{{message_m}}</view>
 <view class="message">{{message_a}}</view>
+
