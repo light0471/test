@@ -14,9 +14,9 @@ Component({
   lifetimes: {
 
     attached: function () {
-      console.log('-----======')
+      // console.log('-----======')
       // 在组件实例进入页面节点树时执行
-      console.log('attached')
+      // console.log('attached')
       qqmapsdk = new QQMapWX({
         key: 'G64BZ-NTSCU-GJRVA-B5ZP3-HSAMQ-3KBER' //这里自己的key秘钥进行填充
       });
@@ -73,7 +73,7 @@ Component({
             inforList: data_is
           })
         }
-        console.log(res.data.items)
+        // console.log(res.data.items)
       })
     },
     getUserLocation: function () {
@@ -165,7 +165,7 @@ Component({
             latitude: latitude,
             longitude: longitude
           })
-          console.log(vm.data.location)
+          // console.log(vm.data.location)
 
           // app.globalData.city = vm.data.city
           // console.log(app.globalData.city)

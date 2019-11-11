@@ -22,6 +22,8 @@ var config = {
     save_gg: `${host}/save_gg`,
     list_zy: `${host}/list_zy`,
     save_zy: `${host}/save_zy`,
+    list_srouter: `${host}/list_srouter`,
+    save_srouter: `${host}/save_srouter`,
   }
 };
 

@@ -10,13 +10,20 @@
         <!-- 搜索框 -->
         <view class="weui-search-bar__box">
           <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
-          <input type="text" class="weui-search-bar__input" placeholder="请输入搜索内容" />
+          <input type="text" class="weui-search-bar__input" bindconfirm="search" placeholder="请输入搜索内容" bindinput="inputTyping"/>
         </view>
       </view>
       <!-- 取消搜索 -->
       <view class="action">
-        <button class="cu-btn bg-green shadow-blur round">搜索</button>
+        <button class="cu-btn bg-blue shadow-blur round" bindtap="search">搜索</button>
       </view>
     </view>
+  </view>
+  <view wx:for="{{lists}}" wx:key>
+    <button
+      class="cu-btn bg-blue shadow-blur" 
+      style="margin-left: 20rpx;margin-top:20rpx;" data-nrouter="{{item.s_router}}" bindtap="tonewrouter">
+      {{item.n_router}}
+    </button>
   </view>
 </view>
