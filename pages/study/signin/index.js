@@ -20,10 +20,9 @@ Page({
   },
 
 //点击日期显示签到情况
-
   selectDate: function(e) {
     const date = e.detail.date;
-    let i = date.substr(9, 2) - 1
+    let i = date.substr(8, 2) - 1
     let res_m = this.data.mystatus['m_' + i]
     let res_a = this.data.mystatus['a_' + i]
     let statustext_m = "";
@@ -41,7 +40,6 @@ Page({
         statustext_m = "您已迟到"
       }
     }
-
 
     if (typeof (res_a) == 'undefined' || res_a == null) {
       statustext_a = ""
@@ -87,7 +85,7 @@ Page({
     let my_c = {}
 
     for (let i = 0; i < arr.length; i++) {
-      let j = (arr[i].time).substr(9, 2) - 1
+      let j = (arr[i].time).substr(8, 2)-1
       my_c[j + ''] = j
       let date = (arr[i].time).substr(0, 10)
       let ma = ''
@@ -118,7 +116,7 @@ Page({
     })
 
     let my = this.data.my_status
-    console.log('this.data.mystatus', this.data.mystatus1)
+    console.log('this.data.mystatus', this.data.mystatus)
 
     /*
     结合两个时间段的签到，定义一个总的状态值，
@@ -152,6 +150,7 @@ Page({
   getCount:function(){
     let date = new Date();
     let i = date.getDate()
+    console.log(i)
     let my = []
     for (let j = 0; j < parseInt(i); j++) {
       my.push(null)

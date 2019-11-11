@@ -13,8 +13,6 @@
   </view>
 </view>
 
-
-
 <view class="cu-modal bottom-modal {{modalName=='bottomModal'?'show':''}}">
   <view class="dialog">
     <view class="bt">
