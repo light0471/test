@@ -2,7 +2,7 @@
   "usingComponents": {},
   "navigationStyle": "default",
   "backgroundTextStyle": "light",
-  "navigationBarBackgroundColor": "#fff",
+  "navigationBarBackgroundColor": "#0c99e1",
   "navigationBarTitleText": "课程表",
-  "navigationBarTextStyle": "black"
+  "navigationBarTextStyle": "white"
 }

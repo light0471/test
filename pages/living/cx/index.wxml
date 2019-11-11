@@ -24,7 +24,7 @@
       <!-- <view class="cu-avatar round lg" style="background-image:url(/images/study/vehicle_{{item.v_type}}.png);"></view> -->
       <image src="/images/study/vehicle_{{item.v_type}}.png" class="cu-avatar round lg" mode="aspectFit"></image>
       <view class="content">
-        <view class="text-grey">{{item.v_person}}</view>
+        <view class="text-grey zi_font">{{item.v_person}}</view>
         <view class="text-gray text-sm">
           <text class="cuIcon-infofill text-red"></text> 到站地：{{vehicle_picker[item.v_distination]}} </view>
       </view>

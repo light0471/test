@@ -1,2 +1,15 @@
-<!--pages/setting/MessageSet/MessageSet.wxml-->
-<text>pages/setting/MessageSet/MessageSet.wxml</text>
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content">发布公告</view>
+</cu-custom>
+
+<form bindsubmit="formSubmit">
+ <view class="cu-form-group">
+   <textarea  bindinput="textareaAInput" placeholder="请输入消息：(不超过10个字符)"></textarea>
+ </view>
+
+ <view class="padding-xl">
+      <button class="cu-btn block bg-blue margin-tb-sm lg" lang="zh_CN"
+      bindtap="confirm">确定</button>
+  </view>
+</form>

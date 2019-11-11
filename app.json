@@ -18,11 +18,16 @@
     "pages/living/yl/ylupdate/index",
     "pages/living/cx/cxupdate/index",
     "pages/setting/yjfk/yjfk/index",
-    "pages/setting/yjfk/index"
+    "pages/setting/yjfk/index",
+    "pages/news/news",
+    "pages/search/index",
+    "pages/setting/MessageSet/MessageSet",
+    "pages/location/index"
+
   ],
   "window": {
-    "navigationBarBackgroundColor": "#39b54a",
-    "navigationBarTitleText": "学习小助手",
+    "navigationBarBackgroundColor": "#0D9DDB",
+    "navigationBarTitleText": "",
     "navigationStyle": "custom",
     "navigationBarTextStyle": "white"
   },

@@ -1,11 +1,11 @@
 <scroll-view scroll-y class="scrollPage">
-  <view class="UCenter-bg">
-    <open-data type="userAvatarUrl"  class="userinfo-avatar png" mode="widthFix"></open-data>
+  <view class="UCenter-bg" bgColor="bg-gradual-blue">
+    <open-data type="userAvatarUrl" class="userinfo-avatar png" mode="widthFix"></open-data>
     <open-data class="text-xl" type="userNickName" lang="zh_CN"></open-data>
+      <!-- <image src="https://img.zcool.cn/community/01c34a58ff0dfba801214550d6d5cb.gif" mode="scaleToFill" class="gif-wave"></image> -->
   </view>
-  
-  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
 
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
     <view class="cu-item arrow">
       <navigator class="content" url="/pages/setting/grxx/index" hover-class="none">
         <text class="cuIcon-creativefill text-orange"></text>

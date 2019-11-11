@@ -1,8 +1,6 @@
 {
-  "navigationBarBackgroundColor": "#4FA7B3",
+  "navigationBarBackgroundColor": "#0A95E6",
   "navigationBarTitleText": "餐饮",
   "navigationStyle": "default",
   "usingComponents": {}
-
-
 }

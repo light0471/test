@@ -1,15 +1,17 @@
 /* pages/study/homework/index.wxss */
+
 .workup{
  padding: 50rpx 30rpx 0rpx 30rpx;
- 
 }
+
 .buttonsize{
   width: 100%;
- 
 }
+
 .bt{
    padding: 10rpx 50rpx 10rpx 50rpx;
 }
+
 .dialog {
 	position: relative;
 	display: inline-block;
@@ -17,7 +19,6 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 680rpx;
-  
 	max-width: 100%;
 	background-color: #f8f8f8;
 	border-radius: 10rpx;

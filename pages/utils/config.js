@@ -20,6 +20,8 @@ var config = {
     save_yjfk: `${host}/save_yjfk`,
     list_gg: `${host}/list_gg`,
     save_gg: `${host}/save_gg`,
+    list_zy: `${host}/list_zy`,
+    save_zy: `${host}/save_zy`,
   }
 };
 

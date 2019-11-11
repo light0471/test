@@ -8,7 +8,7 @@ var time1 = t.substr(11, 19);
 const app = getApp()
 
 Component({
-  properties:{
+  properties: {
     location: String,
   },
   lifetimes: {
@@ -16,14 +16,14 @@ Component({
     attached: function () {
       console.log('-----======')
       // 在组件实例进入页面节点树时执行
-      console.log('attached') 
+      console.log('attached')
       qqmapsdk = new QQMapWX({
         key: 'G64BZ-NTSCU-GJRVA-B5ZP3-HSAMQ-3KBER' //这里自己的key秘钥进行填充
       });
       this.getUserLocation()
       this.getNewsList()
     },
-    
+
   },
 
   options: {
@@ -32,25 +32,25 @@ Component({
   },
 
   data: {
-   
+
     imgUrls: [{
-        link: '../news/news',
-        url: 'https://n.sinaimg.cn/translate/67/w1000h667/20191104/32ee-ihuuxuu7922061.jpg',
-      },
-      {
-        link: '../news/news',
-        url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572950914339&di=a3a3c11e2ce6d415ba8336ac3d5ce0c8&imgtype=0&src=http%3A%2F%2Fp2.pccoo.cn%2Fpost%2F20150405%2F2015040516392410962800.jpg',
-      },
-      {
-        link: '../news/news',
-        url: 'https://n.sinaimg.cn/translate/192/w1000h792/20191031/8731-ihqyuym7227964.jpg',
-      },
-      {
-        link: '../news/news',
-        url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572951897946&di=feeb94f6bb2f255252a3df1744ed8db3&imgtype=0&src=http%3A%2F%2F06imgmini.eastday.com%2Fmobile%2F20190505%2F20190505210008_47c50c7b594643585a2d40bc6feffdd7_3_mwpl_05500201.jpg',
-      },
+      link: '../news/news',
+      url: 'https://n.sinaimg.cn/translate/67/w1000h667/20191104/32ee-ihuuxuu7922061.jpg',
+    },
+    {
+      link: '../news/news',
+      url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572950914339&di=a3a3c11e2ce6d415ba8336ac3d5ce0c8&imgtype=0&src=http%3A%2F%2Fp2.pccoo.cn%2Fpost%2F20150405%2F2015040516392410962800.jpg',
+    },
+    {
+      link: '../news/news',
+      url: 'https://n.sinaimg.cn/translate/192/w1000h792/20191031/8731-ihqyuym7227964.jpg',
+    },
+    {
+      link: '../news/news',
+      url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572951897946&di=feeb94f6bb2f255252a3df1744ed8db3&imgtype=0&src=http%3A%2F%2F06imgmini.eastday.com%2Fmobile%2F20190505%2F20190505210008_47c50c7b594643585a2d40bc6feffdd7_3_mwpl_05500201.jpg',
+    },
     ],
-  Hei: "400rpx" //这是swiper要动态设置的高度属性
+    Hei: "350rpx" //这是swiper要动态设置的高度属性
   },
 
   methods: {
@@ -76,7 +76,7 @@ Component({
         console.log(res.data.items)
       })
     },
-    getUserLocation: function() {
+    getUserLocation: function () {
       let vm = this;
       wx.getSetting({
         success: (res) => {
@@ -88,7 +88,7 @@ Component({
             wx.showModal({
               title: '请求授权当前位置',
               content: '需要获取您的地理位置，请确认授权',
-              success: function(res) {
+              success: function (res) {
                 if (res.cancel) {
                   wx.showToast({
                     title: '拒绝授权',
@@ -97,7 +97,7 @@ Component({
                   })
                 } else if (res.confirm) {
                   wx.openSetting({
-                    success: function(dataAu) {
+                    success: function (dataAu) {
                       if (dataAu.authSetting["scope.userLocation"] == true) {
                         wx.showToast({
                           title: '授权成功',
@@ -129,11 +129,11 @@ Component({
       })
     },
     // 微信获得经纬度
-    getLocation: function() {
+    getLocation: function () {
       let vm = this;
       wx.getLocation({
         type: 'wgs84',
-        success: function(res) {
+        success: function (res) {
           // console.log(JSON.stringify(res))
           var latitude = res.latitude
           var longitude = res.longitude
@@ -141,13 +141,13 @@ Component({
           var accuracy = res.accuracy;
           vm.getLocal(latitude, longitude)
         },
-        fail: function(res) {
+        fail: function (res) {
           // console.log('fail' + JSON.stringify(res))
         }
       })
     },
     // 获取当前地理位置
-    getLocal: function(latitude, longitude) {
+    getLocal: function (latitude, longitude) {
       let vm = this;
 
       qqmapsdk.reverseGeocoder({
@@ -155,7 +155,7 @@ Component({
           latitude: latitude,
           longitude: longitude
         },
-        success: function(res) {
+        success: function (res) {
           // console.log(JSON.stringify(res));
           let province = res.result.address_component.province
           let city = res.result.address_component.city
@@ -165,40 +165,41 @@ Component({
             latitude: latitude,
             longitude: longitude
           })
-         
+          console.log(vm.data.location)
+
           // app.globalData.city = vm.data.city
           // console.log(app.globalData.city)
 
         },
-        fail: function(res) {
+        fail: function (res) {
           // console.log(res);
         },
-        complete: function(res) {
+        complete: function (res) {
           // console.log(res);
         }
       });
 
     },
 
-    gotonew: function() {
+    gotonew: function () {
       wx.navigateTo({
         url: "../news/news",
       })
     },
 
-    search: function() {
+    search: function () {
       wx.navigateTo({
         url: '../search/index'
       })
     },
 
-    location: function() {
+    location: function () {
       wx.navigateTo({
         url: '../location/index'
       })
     },
 
-    click: function() {
+    click: function () {
       var that = this;
       var show;
       var time = t;
@@ -216,11 +217,11 @@ Component({
               duration: 2000
             })
             http.post({
-                url: config.service.save_qd,
-                data: {
-                  time: time
-                }
-              },
+              url: config.service.save_qd,
+              data: {
+                time: time
+              }
+            },
               (res) => {
                 if (res.data.errcode == 0) {
                   // 跳转
@@ -247,7 +248,7 @@ Component({
             duration: 2000
           })
         },
-        complete: (res) => {}
+        complete: (res) => { }
       })
 
       http.post({
