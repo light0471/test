@@ -201,36 +201,25 @@ Component({
 
     click: function () {
       var that = this;
-      var show;
+      let show;
       var time = t;
       console.log(time);
       wx.scanCode({
         success: (res) => {
-          this.show = "--result:" + res.result + "--scanType:" + res.scanType + "--charSet:" + res.charSet + "--path:" + res.path + "--time:" + time1;
-          that.setData({
-            show: this.show
-          })
           if (res.result == "引擎计划移动开发培训班") {
-            wx.showToast({
-              title: time1,
-              image: '/images/right.png',
-              duration: 2000
-            })
             http.post({
               url: config.service.save_qd,
               data: {
                 time: time
               }
-            },
-              (res) => {
-                if (res.data.errcode == 0) {
-                  // 跳转
-                  wx.redirectTo({
-                    url: '../index/index',
-                  })
-                }
-                console.log(res)
-              })
+            }, (res) => {
+              console.log(111, res)
+            })
+            wx.showToast({
+              title: time1,
+              image: '/images/right.png',
+              duration: 2000
+            })
           } else {
             wx.showToast({
               title: '签到失败',
@@ -239,8 +228,6 @@ Component({
             })
           }
         },
-
-
         fail: (res) => {
           wx.showToast({
             title: '签到失败',
@@ -250,22 +237,6 @@ Component({
         },
         complete: (res) => { }
       })
-
-      http.post({
-        url: config.service.save_qd,
-        data: {
-          time: time
-        }
-      }, (res) => {
-        if (res.data.errcode == 0) {
-          // 跳转
-          wx.redirectTo({
-            url: '../index/index',
-          })
-        }
-        console.log(res)
-      })
-
     }
   }
 

@@ -59,13 +59,12 @@
   background-color:	#FFD700;
 }
 .swiper_item {
-  margin-top: 10rpx;
-  margin-left: 10rpx;
+  margin-top: 5rpx;
+  margin-left: 2rpx;
   font-size: 35rpx;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  letter-spacing: 2px;
 }
 .city{
 font-size: 20rpx;
