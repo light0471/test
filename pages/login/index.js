@@ -84,7 +84,7 @@ Page({
       quality: 'high',
       success: (res) => {
         this.setData({
-          src: res.tempImagePath·
+          src: res.tempImagePath
         })
         //图片base64编码
         wx.getFileSystemManager().readFile({
