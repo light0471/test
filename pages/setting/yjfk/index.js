@@ -69,6 +69,7 @@ Page({
   getList: function (e) {
     let that = this
     let params = { search_key: this.data.search_key}
+    console.log(111,params)
     http.post({
       url: config.service.list_yjfk,
       data: params

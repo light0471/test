@@ -23,7 +23,7 @@
 <view class="cu-list menu-avatar">
   <view class="cu-item {{modalName=='move-box-'+ index?'move-cur':''}} one" wx:for="{{lists}}" wx:key bindtouchstart="ListTouchStart" bindtouchmove="ListTouchMove" bindtouchend="ListTouchEnd" data-target="move-box-{{index}}" style="border-bottom:1rpx solid #d3d3d3">
      <view class="cu-avatar radius bgcolor margin-left" >
-       <text class="two">{{item.type==true?"匿名":item.name}}</text>
+       <text class="two">{{item.type=='true'?"匿名":item.name}}</text>
      </view>
      <view class="content">
        <text class="text-black three"> 意见：{{item.content}} </text>
