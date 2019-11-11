@@ -10,8 +10,13 @@
   width: 100%;
   height: 100%;
 }
+.location{
+  padding-left: 2%;
+  width:10%;
+  text-align: center;
+}
 .search{
-  width: 90%;
+  width:80%;
 }
 .search_arr {
   border: 1px solid #d0d0d0;
@@ -43,14 +48,11 @@
   height: 15px;
   text-align: center;
     }
-.swiper_image{
+    
+.slide-image{
   width:100%;
-  height:400rpx !important;
 }
-swiper {
-  width:100%;
-  height:100%;
-}
+
 .swiper_container {
   height: 60rpx;
   width: 100%;
@@ -64,4 +66,8 @@ swiper {
   text-overflow: ellipsis;
   white-space: nowrap;
   letter-spacing: 2px;
+}
+.city{
+font-size: 20rpx;
+color: black;
 }

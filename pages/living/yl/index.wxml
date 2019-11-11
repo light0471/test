@@ -20,11 +20,11 @@
   </view>
 
   <view class="cu-list menu-avatar">
-    <view class="cu-item {{modalName=='move-box-'+ index?'move-cur':''}}" wx:for="{{lists}}" wx:key bindtouchstart="ListTouchStart" bindtouchmove="ListTouchMove" bindtouchend="ListTouchEnd" data-target="move-box-{{index}}">
+    <view class="cu-item {{modalName=='move-box-'+ index?'move-cur':''}} z_line" wx:for="{{lists}}" wx:key bindtouchstart="ListTouchStart" bindtouchmove="ListTouchMove" bindtouchend="ListTouchEnd" data-target="move-box-{{index}}">
       <!-- <view class="cu-avatar round lg" style="background-image:url(/images/study/study_type_{{item.type}}.png);"></view> -->
       <image src="/images/study/study_type_{{item.type}}.png" class="cu-avatar round lg" mode="aspectFit"></image>
       <view class="content">
-        <view class="text-grey">{{item.title}}</view>
+        <view class="text-grey zi_font">{{item.title}}</view>
         <view class="text-gray text-sm">
           <text class="cuIcon-infofill text-red"></text> 地址：{{item.location}} </view>
       </view>
@@ -32,6 +32,7 @@
         <view class="text-grey text-xs">{{item.time}}</view>
         <!-- <view class="cu-tag round bg-grey sm">5</view> -->
       </view>
+      
       <view class="move">
         <view class="bg-grey">置顶</view>
         <view class="bg-red">删除</view>

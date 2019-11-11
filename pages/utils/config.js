@@ -18,6 +18,8 @@ var config = {
     save_qd: `${host}/save_qd`,
     list_yjfk: `${host}/list_yjfk`,
     save_yjfk: `${host}/save_yjfk`,
+    list_gg: `${host}/list_gg`,
+    save_gg: `${host}/save_gg`,
   }
 };
 

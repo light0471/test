@@ -75,10 +75,12 @@
 
 .cuIcon-locationfill:before {
 	content: "\e650";
+  
 }
 
 .cuIcon-location:before {
 	content: "\e651";
+  font-size: 50rpx;
 }
 
 .cuIcon-phone:before {

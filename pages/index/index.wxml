@@ -1,4 +1,4 @@
-<basics wx:if="{{PageCur=='basics'}}"></basics>
+<basics location='{{location}}' wx:if="{{PageCur=='basics'}}"></basics>
 <study wx:if="{{PageCur=='study'}}"></study>
 <living wx:if="{{PageCur=='living'}}"></living>
 <about wx:if="{{PageCur=='about'}}"></about>

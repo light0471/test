@@ -27,6 +27,13 @@
       </navigator>
     </view>
 
+     <view class="cu-item arrow">
+      <navigator class="content" url="/pages/setting/MessageSet/MessageSet" hover-class="none">
+        <text class="cuIcon-tagfill text-red"></text>
+        <text class="text-grey">发布公告</text>
+      </navigator>
+    </view>
+
     <view class="cu-item arrow">
       <navigator class="content" url="/pages/setting/about/about" hover-class="none">
         <image src="/images/logo.png" class="png" mode="aspectFit"></image>

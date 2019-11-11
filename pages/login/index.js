@@ -92,9 +92,9 @@ Page({
         wx.getFileSystemManager().readFile({
           filePath: this.data.src, //选择图片返回的相对路径
           encoding: 'base64', //编码格式
-          success: res => { //成功的回调
+          success: res1 => { //成功的回调
             that.setData({
-              base64: res.data
+              base64: res1.data
             })
             that.upload_sb()
           }
