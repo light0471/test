@@ -23,7 +23,6 @@ Page({
   },
   upload_sb () {
     //acess_token获取
-    console.log('222222222222222222')
     var that = this;
     wx.request({
       url: 'https://aip.baidubce.com/oauth/2.0/token', //真实的接口地址
@@ -84,9 +83,8 @@ Page({
     ctx.takePhoto({
       quality: 'high',
       success: (res) => {
-        console.log('1111111111111111111')
         this.setData({
-          src: res.tempImagePath
+          src: res.tempImagePath·
         })
         //图片base64编码
         wx.getFileSystemManager().readFile({

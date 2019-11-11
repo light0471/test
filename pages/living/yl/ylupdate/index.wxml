@@ -1,4 +1,4 @@
-<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}" bindtap="back">
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}" bindtap="back">
 	<view slot="backText">返回</view>
 	<view slot="content">创建娱乐项目</view>
 </cu-custom>

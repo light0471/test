@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/login/index",
+"pages/login/index",
     "pages/index/index",
     "pages/basics/home/home",
     "pages/about/home/home",
