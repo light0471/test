@@ -50,10 +50,7 @@ Page({
 
   //查看附件图片
   showImg: function(e) {
-    console.log(e.currentTarget.dataset.url)
-    
     wx.previewImage({
-    
       urls: [e.currentTarget.dataset.url],
     })
   },
