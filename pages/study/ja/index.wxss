@@ -1,5 +1,6 @@
 /* pages/study/ja/index.wxss */
-.img{
+
+.img {
   width: 100%;
   height: 400rpx;
 }

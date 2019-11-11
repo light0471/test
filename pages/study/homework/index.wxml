@@ -2,50 +2,26 @@
   <view slot="backText">返回</view>
   <view slot="content">作业</view>
 </cu-custom>
-<view class="cu-timeline">
-  <view class="cu-time">10-30</view>
+
+<view class="cu-timeline" wx:for="{{lists}}" wx:key>
+  <view class="cu-time">{{item.h_time}}</view>
   <view class="cu-item cuIcon-edit text-blue">
     <view class="content" bindtap="" data-target="bottomModal">
-      <text bindtap="upLoad" data-target="bottomModal">使用Android studio完成计算器布局，计算功能尽量实现【下周一交】</text>
-      <button class="cu round  line{{bordersize?bordersize:''}}-blue shadow?'shadow':''}}" bindtap="showimg">查看</button>
-
-    </view>
-  </view>
-  <view class="cu-item cuIcon-edit text-blue">
-    <view class="content" bindtap="upLoad" data-target="bottomModal">
-      使用Android studio完成一个简单的页面跳转【下周一交】
-    </view>
-  </view>
-
-</view>
-
-<view class="cu-timeline">
-  <view class="cu-time">11-06</view>
-  <view class="cu-item cuIcon-edit text-blue">
-    <view class="content" bindtap="upLoad" data-target="bottomModal">
-      使用微信小程序完成计算器的布局及计算功能的实现【下周一交】
+      <text bindtap="upLoad" data-target="bottomModal">{{item.h_content}}</text>
+      <button wx:if="{{item.h_url}}" class="cu round line{{bordersize?bordersize:''}}-blue shadow?'shadow':''}}"  bindtap="showImg" data-url="{{item.h_url}}">查看</button>
     </view>
   </view>
 </view>
 
-<view class="cu-timeline">
-  <view class="cu-time">11-15</view>
-  <view class="cu-item cuIcon-edit text-blue">
-    <view class="content" bindtap="upLoad" data-target="bottomModal">
-      使用微信小程序完成个税计算器【本周五交】
-      <button class="cu round  line{{bordersize?bordersize:''}}-blue shadow?'shadow':''}}">查看</button>
-    </view>
-  </view>
-</view>
+
 
 <view class="cu-modal bottom-modal {{modalName=='bottomModal'?'show':''}}">
   <view class="dialog">
     <view class="bt">
-      <button class="cu-btn bg-green shadow-blur buttonsize" bindtap="downLoad1">上传</button>
+      <button class="cu-btn bg-green shadow-blur buttonsize" bindtap="downLoad">上传</button>
     </view>
     <view class="bt">
       <button class="cu-btn text-green line-green shadow buttonsize" bindtap="hideModal">取消</button>
     </view>
-
   </view>
 </view>

@@ -13,6 +13,7 @@ const request = function (method) {
         'content-type': 'application/x-www-form-urlencoded'
       },
       success: (res) => {
+       
         if (res.data.items) {
           let res_json = JSON.parse(decodeURIComponent(res.data.items));
           res.data.items = res_json

@@ -1,42 +1,72 @@
 // pages/study/homework/index.js
+var config = require('../../utils/config.js');
+var http = require('../../utils/http.js');
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-    url: ""
+  data: { 
+    lists:[],
+   
   },
+
   SetShadow(e) {
     this.setData({
       shadow: e.detail.value
     })
   },
+
   SetBorderSize(e) {
     this.setData({
       bordersize: e.detail.value
     })
   },
+
+  onLoad: function (e) {
+    this.getList()
+  },
+
+  //后台获取数据
+  getList: function (e) {
+    let that = this
+    let params = {}
+    http.post({
+      url: config.service.list_zy,
+      data: params
+    }, (res) => {
+      console.log(res)
+      if (res.data.errcode == 0) {
+        that.setData({
+          lists: res.data.items
+        })
+      }
+
+    })
+  },
+
+  //点击出现弹框
   upLoad: function(e) {
-    console.log("hahaha")
     this.setData({
       modalName: e.currentTarget.dataset.target
     })
   },
-  showimg: function(e) {
+
+  //查看附件图片
+  showImg: function(e) {
+    console.log(e.currentTarget.dataset.url)
+    
     wx.previewImage({
-      urls: ['https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572956671092&di=e56a292bcfbcbdc52e3b625f76c1a877&imgtype=0&src=http%3A%2F%2Fb.hiphotos.baidu.com%2Fexp%2Fw%3D500%2Fsign%3Dbd4ea902aacc7cd9fa2d34d909032104%2F8cb1cb1349540923ccb5d1919b58d109b2de4904.jpg'],
+    
+      urls: [e.currentTarget.dataset.url],
     })
   },
+  
+  //取消
   hideModal(e) {
     this.setData({
       modalName: null
     })
   },
-  upLoadFile: function(e) {
 
-  },
-  downLoad1: function() {
+  //下载
+  downLoad: function() {
     wx.chooseImage({
       success: function(res) {
         const tempFilePaths = res.tempFilePaths

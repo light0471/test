@@ -1,35 +1,16 @@
 <!--pages/study/ja/index.wxml-->
 
 <view>
-  <!-- <image class="img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572588745131&di=719765ab1a7880460a33802cdc0a5e63&imgtype=0&src=http%3A%2F%2Fwx2.sinaimg.cn%2Fwap720%2F6afa72aely1fspk35ervuj21bj0qojuw.jpg"></image> -->
-  <swiper
-    class="screen-swiper round-dot"
-    indicator-dots="true"
-    circular="true"
-    autoplay="true"
-    interval="5000"
-    duration="500"
-  >
+  <swiper class="screen-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
     <swiper-item>
-      <image
-        class="img"
-        src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572588745131&di=719765ab1a7880460a33802cdc0a5e63&imgtype=0&src=http%3A%2F%2Fwx2.sinaimg.cn%2Fwap720%2F6afa72aely1fspk35ervuj21bj0qojuw.jpg"
-        mode="aspectFill"
-      ></image>
+      <image class="img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572588745131&di=719765ab1a7880460a33802cdc0a5e63&imgtype=0&src=http%3A%2F%2Fwx2.sinaimg.cn%2Fwap720%2F6afa72aely1fspk35ervuj21bj0qojuw.jpg" mode="aspectFill"></image>
     </swiper-item>
     <swiper-item>
-      <image
-        class="img"
-        src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572589253280&di=0c63563d2ba29f4f9f0e2c2b25e3fcec&imgtype=jpg&src=http%3A%2F%2Fimg0.imgtn.bdimg.com%2Fit%2Fu%3D1519323830%2C3476460208%26fm%3D214%26gp%3D0.jpg"
-        mode="aspectFill"
-      ></image>
+      <image class="img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572589253280&di=0c63563d2ba29f4f9f0e2c2b25e3fcec&imgtype=jpg&src=http%3A%2F%2Fimg0.imgtn.bdimg.com%2Fit%2Fu%3D1519323830%2C3476460208%26fm%3D214%26gp%3D0.jpg"
+        mode="aspectFill"></image>
     </swiper-item>
     <swiper-item>
-      <image
-        class="img"
-        src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572589283907&di=5204058c059569d3cedece54854c3172&imgtype=0&src=http%3A%2F%2Fwww.999zx.cn%2Fadm_file%2Ffck%2Fimages%2F2018%2F4%2FImage%2F20184386447866.jpg"
-        mode="aspectFill"
-      ></image>
+      <image class="img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572589283907&di=5204058c059569d3cedece54854c3172&imgtype=0&src=http%3A%2F%2Fwww.999zx.cn%2Fadm_file%2Ffck%2Fimages%2F2018%2F4%2FImage%2F20184386447866.jpg" mode="aspectFill"></image>
     </swiper-item>
   </swiper>
 </view>
@@ -40,16 +21,14 @@
   </view>
 </view>
 
-<view
-  class="cu-list menu "
->
+<view class="cu-list menu ">
   <view class="cu-item ">
     <view class="content">
       <text class="cuIcon-warn text-red"></text>
-      <text class="text-grey">小程序课件</text>
+      <text class="text-black">小程序课件</text>
     </view>
     <view class="action">
-      <button class="cu-btn round bg-green shadow" catchtap="downLoad1">
+      <button class="cu-btn round bg-green shadow" catchtap="downLoad">
         下载
       </button>
     </view>
@@ -58,10 +37,10 @@
   <view class="cu-item ">
     <view class="content">
       <text class="cuIcon-btn text-green"></text>
-      <text class="text-grey">安卓课件</text>
+      <text class="text-black">安卓课件</text>
     </view>
     <view class="action">
-      <button class="cu-btn round bg-green shadow" catchtap="downLoad1">
+      <button class="cu-btn round bg-green shadow" catchtap="downLoad">
         下载
       </button>
     </view>
@@ -70,10 +49,10 @@
   <view class="cu-item ">
     <view class="content">
       <text class="cuIcon-discoverfill text-orange"></text>
-      <text class="text-grey">JAVA课件</text>
+      <text class="text-black">JAVA课件</text>
     </view>
     <view class="action">
-      <button class="cu-btn round bg-green shadow" catchtap="downLoad1">
+      <button class="cu-btn round bg-green shadow" catchtap="downLoad">
         下载
       </button>
     </view>
@@ -82,10 +61,10 @@
   <view class="cu-item ">
     <view class="content">
       <text class="cuIcon-btn text-pink"></text>
-      <text class="text-grey">5G课件</text>
+      <text class="text-black">5G课件</text>
     </view>
     <view class="action">
-      <button class="cu-btn round bg-green shadow" catchtap="downLoad1">
+      <button class="cu-btn round bg-green shadow" catchtap="downLoad">
         下载
       </button>
     </view>
@@ -94,10 +73,10 @@
   <view class="cu-item ">
     <view class="content">
       <text class="cuIcon-tagfill text-green"></text>
-      <text class="text-grey">GO课件</text>
+      <text class="text-black">物联网课件</text>
     </view>
     <view class="action">
-      <button class="cu-btn round bg-green shadow" catchtap="downLoad1">
+      <button class="cu-btn round bg-green shadow" catchtap="downLoad">
         下载
       </button>
     </view>

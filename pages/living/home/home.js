@@ -8,22 +8,22 @@ Component({
     CustomBar: app.globalData.CustomBar,
     list: [{
       title: '出行',
-      img: 'https://image.weilanwl.com/color2.0/plugin/wdh2236.jpg',
+      img: 'https://s2.ax1x.com/2019/11/07/MFranK.jpg',
       url: '/cx/index'
       },
       {
         title: '娱乐',
-        img: 'https://image.weilanwl.com/color2.0/plugin/qpct2148.jpg',
+        img: 'https://s2.ax1x.com/2019/11/07/MFrAYj.jpg',
         url: '/yl/index'
       },{
         title: '餐饮',
-        img: 'https://image.weilanwl.com/color2.0/plugin/sylb2244.jpg',
-        url: '/indexes/indexes'
+        img: 'https://s2.ax1x.com/2019/11/07/MFrt6x.jpg',
+        url: '/food/index'
       },
       {
         title: '请假',
-        img: 'https://image.weilanwl.com/color2.0/plugin/qpczdh2307.jpg',
-        url: '/verticalnav/verticalnav'
+        img: 'https://s2.ax1x.com/2019/11/07/MF4FW8.jpg',
+        url: '/dayoff/pages/index/index'
       }
     ]
   },
