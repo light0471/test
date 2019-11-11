@@ -54,6 +54,11 @@ button::after { /*button的边框样式是通过::after方式实现的*/
   filter: alpha(opacity=70);
 }
 
+input {
+  outline: none;
+  border: none;
+  list-style: none;
+}
 .show {
   display: none;
   position: absolute;

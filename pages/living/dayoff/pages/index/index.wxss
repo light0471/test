@@ -1,0 +1,130 @@
+/*页面背景色*/
+
+Page {
+  background-color: #f1f1f1;
+}
+
+/*请假和请假结果*/
+
+.head_item {
+  width: 374rpx;
+  text-align: center;
+  font-size: 34rpx;
+  color: #999;
+  letter-spacing: 0;
+}
+
+/*点击效果*/
+
+.head_itemActive {
+  color: #30d1ff;
+}
+
+/*头*/
+
+.head {
+  width: 100%;
+  height: 100rpx;
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: 1rpx solid rgba(204, 204, 204, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+/*内容*/
+
+.main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 100rpx;
+  top: 0;
+}
+
+/* 显 */
+
+.show {
+  display: block;
+  text-align: center;
+}
+
+/* 隐 */
+
+.hidden {
+  display: none;
+  text-align: center;
+}
+
+/* 新请假 */
+
+.bg {
+  margin: 40rpx;
+  background-color: #fff;
+  border: 2rpx dotted #ccc;
+  border-radius: 15rpx;
+  height: 100%;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  font-size: 30rpx;
+  margin: 25rpx;
+  align-items: center;
+}
+
+.btn {
+  background-color: #79caff;
+  color: #fff;
+  width: 120rpx;
+  font-size: 30rpx;
+  margin-top: 30rpx;
+}
+
+.bk {
+  border-radius: 10rpx;
+  border: 2rpx solid #ccc;
+  padding: 10rpx;
+  width: 65%;
+}
+
+/* 请假结果 */
+
+.region {
+  margin: 40rpx 40rpx 0 40rpx;
+  height: 250rpx;
+  background-color: #fff;
+  border: 2rpx dotted #ccc;
+  border-radius: 15rpx;
+}
+
+.iteming {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  font-size: 45rpx;
+  padding-top: 30rpx;
+  margin-left: 50rpx;
+}
+
+.date {
+  font-size: 25rpx;
+  padding-top: 15rpx;
+  margin-left: 50rpx;
+  color: #7b7b7b;
+}
+
+.day {
+  font-size: 35rpx;
+  padding-top: 15rpx;
+  margin-left: 50rpx;
+}
+

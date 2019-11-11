@@ -22,7 +22,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.6.4",
-	"appid": "wxba03c8e5b4d869e5",
+	"appid": "wx444aedc31ee3e72a",
 	"projectname": "demo",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -52,7 +52,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 27,
+			"current": 7,
 			"list": [
 				{
 					"id": 0,
@@ -284,8 +284,8 @@
 				},
 				{
 					"id": -1,
-					"name": "pages/login/index",
-					"pathName": "pages/login/index",
+					"name": "pages/study/signin/index",
+					"pathName": "pages/study/signin/index",
 					"query": "",
 					"scene": null
 				},
@@ -305,8 +305,36 @@
 				},
 				{
 					"id": -1,
-					"name": "pages/living/yl/index",
-					"pathName": "pages/living/yl/index",
+					"name": "pages/about/home/home",
+					"pathName": "pages/about/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/study/ja/index",
+					"pathName": "pages/study/ja/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "courses",
+					"pathName": "pages/study/courses/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "food",
+					"pathName": "pages/living/food/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/living/dayoff/pages/index/index",
+					"pathName": "pages/living/dayoff/pages/index/index",
 					"query": "",
 					"scene": null
 				}

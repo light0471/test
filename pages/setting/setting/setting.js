@@ -8,6 +8,7 @@ Page({
         fontSize: 20,
         SkinStyle: "normal"
     },
+
     onLoad: function () {
         var that = this;
         wx.getStorage({
@@ -19,17 +20,21 @@ Page({
             },
         })
     },
+
     pageBack() {
         wx.navigateBack({
             delta: 1
         })
     },
+
+    //修改字体大小
     changeFontSize: function (e) {
         this.setData({
             fontSize: parseInt(e.detail.value).toFixed()
         })
     },
 
+    //修改屏幕亮度
     changeScreenLight: function (e) {
         var that = this;
         //滑动拉杆获得值
@@ -45,6 +50,8 @@ Page({
             }
         })
     },
+
+    //设置屏幕日间夜间模式
     bgBtn: function () {
         if (this.data.SkinStyle === "normal") {
             app.globalData.skin = "dark"; //设置app（）中皮肤的类型

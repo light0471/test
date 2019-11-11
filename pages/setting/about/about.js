@@ -6,6 +6,7 @@ Page({
         ColorList: app.globalData.ColorList,
         display: ''
     },
+
     onLoad: function () {
         var that = this;
         wx.getStorage({
@@ -17,22 +18,29 @@ Page({
             },
         })
     },
+
     pageBack() {
         wx.navigateBack({
             delta: 1
         });
     },
-    showview: function () {
+
+    //显示窗口
+    showView: function () {
         this.setData({
             display: "block"
         })
     },
-    hideview: function () {
+
+    //隐藏窗口
+    hideView: function () {
         this.setData({
             display: "none"
         })
     },
-    slx: function () {
+
+    //显示toast
+    showSlx: function () {
         wx.showToast({
             "title": "VX:thanks214！"
         })

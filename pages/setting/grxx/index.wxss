@@ -1,3 +1,4 @@
+@import "../setting/com.wxss";
 /* pages/setting/grxx/index.wxss */
 .userinfo-avatar{
   width: 30px;

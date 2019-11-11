@@ -6,9 +6,9 @@
         <view slot="backText">返回</view>
         <view slot="content">设置</view>
     </cu-custom>
-    <view class="action ">
-        <text class="cuIcon-title text-orange title-fontsize">个性化设置</text>
-    </view>
+    <!--<view class="action ">-->
+    <!--<text class="cuIcon-title text-orange title-fontsize">个性化设置</text>-->
+    <!--</view>-->
     <view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
         <view class="cu-item {{menuArrow?'arrow':''}}">
             <view class="content">
@@ -37,7 +37,7 @@
                 <text class='text-grey'>设置日间/夜间主题</text>
             </view>
             <view class='action'>
-                <switch class='btn1' bindchange='bgBtn'></switch>
+                <switch bindchange='bgBtn'></switch>
             </view>
         </view>
     </view>

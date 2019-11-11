@@ -1,0 +1,83 @@
+<view class="head">
+  <view class="head_item {{selected?'head_itemActive':''}}" bindtap="selected">新请假</view>
+  <view class="head_item {{selected1?'head_itemActive':''}}" bindtap='selected1'>请假结果</view>
+</view>
+<view class="main {{selected?'show':'hidden'}}">
+  <form bindsubmit="formSubmit">
+    <view class='bg'>
+      <view class='item'>
+        请假姓名：
+        <input name='name' placeholder="请输入请假人姓名" maxlength='15' class='bk' />
+      </view>
+      <view class='item'>
+        请假天数：
+        <input name='leaveDays' placeholder="请输入请假天数" maxlength='15' class='bk' />
+      </view>
+      <view class='item'>
+        开始时间：
+        <view class='bk'>
+          <picker mode="date" value="{{date}}" bindchange="changeDate" name="startTime" bindchange="changeDate">
+            {{date}}
+          </picker>
+        </view>
+      </view>
+      <view class='item'>
+        结束时间：
+        <view class='bk'>
+          <picker mode="date" value="{{date1}}" bindchange="changeDate1" name="endTime" start="{{date}}">
+            {{date1}}
+          </picker>
+        </view>
+      </view>
+      <view class='item'>
+        请假类型：
+        <view class='bk'>
+          <input name='leaveType' placeholder="病假输1/事假输2" maxlength='15' type="number" />
+        </view>
+      </view>
+      <view class='item'>
+        请假理由：
+        <view class='bk'>
+          <input name="leaveReason" placeholder="请输入请假理由" maxlength='500' auto-height/>
+        </view>
+      </view>
+      <button class='btn' formType="submit">提交</button>
+    </view>
+  </form>
+</view>
+
+<view class="main {{selected1?'show':'hidden'}}">
+  <swiper-item>
+    <view class='region'>
+      <view class='iteming'>
+        <view>
+          <view class='content'>
+            小强 病假
+          </view>
+          <view class='date'>
+            2018.11.12-2018.11.12
+          </view>
+          <view class='day'>
+            请假 1 天
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class='region'>
+      <view class='iteming'>
+        <view>
+          <view class='content'>
+            旺财 事假
+          </view>
+          <view class='date'>
+            2018.11.12-2018.11.12
+          </view>
+          <view class='day'>
+            请假 1 天
+          </view>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+</view>
