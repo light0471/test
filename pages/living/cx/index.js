@@ -61,7 +61,7 @@ Page({
   },
   getList: function (e) {
     let that = this
-    let params = { search_key: this.data.search_key}
+    let params = { search_key: this.data.search_key }
     http.post({
       url: config.service.list_cx,
       data: params

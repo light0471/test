@@ -1,7 +1,7 @@
 <!--pages/search/index.wxml-->
 <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
-<view slot="content">搜索</view>
-	<view slot="backText">返回</view>
+  <view slot="content">搜索</view>
+  <view slot="backText">返回</view>
 </cu-custom>
 <view>
   <view>
@@ -10,7 +10,7 @@
         <!-- 搜索框 -->
         <view class="weui-search-bar__box">
           <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
-          <input type="text" class="weui-search-bar__input" bindconfirm="search" placeholder="请输入搜索内容" bindinput="inputTyping"/>
+          <input type="text" class="weui-search-bar__input" bindconfirm="search" placeholder="请输入搜索内容" bindinput="inputTyping" />
         </view>
       </view>
       <!-- 取消搜索 -->
@@ -20,9 +20,7 @@
     </view>
   </view>
   <view wx:for="{{lists}}" wx:key>
-    <button
-      class="cu-btn bg-blue shadow-blur" 
-      style="margin-left: 20rpx;margin-top:20rpx;" data-nrouter="{{item.s_router}}" bindtap="tonewrouter">
+    <button class="cu-btn bg-blue shadow-blur" style="margin-left: 20rpx;margin-top:20rpx;" data-nrouter="{{item.s_router}}" bindtap="tonewrouter">
       {{item.n_router}}
     </button>
   </view>

@@ -1,4 +1,5 @@
 /* pages/location/index.wxss */
-.choose-address{
+
+.choose-address {
   border: 1px solid #000;
- }
+}

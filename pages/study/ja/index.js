@@ -6,7 +6,7 @@ Page({
     id: ''
   },
 
-  downLoad: function() {
+  downLoad: function () {
     let that = this;
     wx.downloadFile({
       url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572588745131&di=719765ab1a7880460a33802cdc0a5e63&imgtype=0&src=http%3A%2F%2Fwx2.sinaimg.cn%2Fwap720%2F6afa72aely1fspk35ervuj21bj0qojuw.jpg',

@@ -1,14 +1,18 @@
 /* pages/setting/yjfk/index.wxss */
 @import "../setting/com.wxss";
-.one{
-  justify-content:flex-end
+
+.one {
+  justify-content: flex-end;
 }
-.two{
-  font-size: 20rpx
+
+.two {
+  font-size: 20rpx;
 }
-.three{
-   font-size: 30rpx
+
+.three {
+  font-size: 30rpx;
 }
-.bgcolor{
-  background-color: #13A9CB
+
+.bgcolor {
+  background-color: #13a9cb;
 }

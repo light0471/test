@@ -7,4 +7,3 @@
 
 <view class="message">{{message_m}}</view>
 <view class="message">{{message_a}}</view>
-

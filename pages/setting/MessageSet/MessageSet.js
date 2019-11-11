@@ -9,7 +9,7 @@ Page({
   },
   textareaAInput(e) {
     this.setData({
-      textareaAValue:e.detail.value
+      textareaAValue: e.detail.value
     })
   },
   switchff(e) {
@@ -19,14 +19,14 @@ Page({
   },
 
   confirm: function (e) {
-    
+
     let params = {
       title: this.data.textareaAValue,
-      time:t
-      
+      time: t
+
     }
-  
-  console.log(params)
+
+    console.log(params)
     http.post({
       url: config.service.save_gg,
       data: params

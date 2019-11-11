@@ -16,12 +16,12 @@ Page({
     wx.getSystemInfo({
       success: function (res) {
         _this.setData({
-          windowWidth : res.windowWidth
+          windowWidth: res.windowWidth
         })
       }
     })
   },
-  upload_sb () {
+  upload_sb() {
     //acess_token获取
     var that = this;
     wx.request({
@@ -60,8 +60,8 @@ Page({
               wx.showToast({
                 title: '验证通过',
                 icon: 'success',
-                duration: 1000, 
-                success: function() {
+                duration: 1000,
+                success: function () {
                   //验证通过，跳转至UI页面
                   wx.navigateTo({
                     url: '/pages/index/index',

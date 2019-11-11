@@ -5,7 +5,7 @@ Page({
   data: {
     textareaAValue: "",
     switchdata: "",
-    nickName:""
+    nickName: ""
   },
   back() {
     wx.redirectTo({
@@ -25,7 +25,7 @@ Page({
 
   onGotUserInfo: function (e) {
     this.setData({
-      nickName:e.detail.userInfo.nickName
+      nickName: e.detail.userInfo.nickName
     })
     let params = {
       content: this.data.textareaAValue,
@@ -44,5 +44,5 @@ Page({
       }
     })
   },
-  
+
 })

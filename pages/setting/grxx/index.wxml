@@ -1,31 +1,31 @@
 <!--pages/setting/grxx/index.wxml-->
 <view class='page' id='{{SkinStyle}}'>
-    <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
-        <view slot="backText">返回</view>
-        <view slot="content">个人信息</view>
-    </cu-custom>
+  <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content">个人信息</view>
+  </cu-custom>
 
-    <view class="cu-form-group margin-top">
-        <text class="text-grey">头像</text>
-        <open-data type="userAvatarUrl" class="userinfo-avatar"></open-data>
-    </view>
+  <view class="cu-form-group margin-top">
+    <text class="text-grey">头像</text>
+    <open-data type="userAvatarUrl" class="userinfo-avatar"></open-data>
+  </view>
 
-    <view class="cu-form-group">
-        <text class="text-grey">昵称</text>
-        <open-data type="userNickName" lang="zh_CN"></open-data>
-    </view>
+  <view class="cu-form-group">
+    <text class="text-grey">昵称</text>
+    <open-data type="userNickName" lang="zh_CN"></open-data>
+  </view>
 
-    <view class="cu-form-group">
-        <text class="text-grey">性别</text>
-        <open-data type="userGender" lang="zh_CN"></open-data>
-    </view>
+  <view class="cu-form-group">
+    <text class="text-grey">性别</text>
+    <open-data type="userGender" lang="zh_CN"></open-data>
+  </view>
 
-    <view class="cu-form-group">
-        <text class="text-grey">地区</text>
-        <open-data type="userCountry" lang="zh_CN"></open-data>
-    </view>
+  <view class="cu-form-group">
+    <text class="text-grey">地区</text>
+    <open-data type="userCountry" lang="zh_CN"></open-data>
+  </view>
 
-    <view class="cu-form-group">
-        <text class="text-grey">更多</text>
-    </view>
+  <view class="cu-form-group">
+    <text class="text-grey">更多</text>
+  </view>
 </view>

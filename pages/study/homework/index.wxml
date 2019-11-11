@@ -8,7 +8,7 @@
   <view class="cu-item cuIcon-edit text-blue">
     <view class="content" bindtap="" data-target="bottomModal">
       <text bindtap="upLoad" data-target="bottomModal">{{item.h_content}}</text>
-      <button wx:if="{{item.h_url}}" class="cu round line{{bordersize?bordersize:''}}-blue shadow?'shadow':''}}"  bindtap="showImg" data-url="{{item.h_url}}">查看</button>
+      <button wx:if="{{item.h_url}}" class="cu round line{{bordersize?bordersize:''}}-blue shadow?'shadow':''}}" bindtap="showImg" data-url="{{item.h_url}}">查看</button>
     </view>
   </view>
 </view>

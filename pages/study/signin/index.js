@@ -15,18 +15,18 @@ Page({
     lists: []
   },
 
-  onLoad: function(e) {
+  onLoad: function (e) {
     this.getList()
   },
 
-//点击日期显示签到情况
-  selectDate: function(e) {
+  //点击日期显示签到情况
+  selectDate: function (e) {
     const date = e.detail.date;
     let i = date.substr(8, 2) - 1
     let res_m = this.data.mystatus['m_' + i]
     let res_a = this.data.mystatus['a_' + i]
     let statustext_m = "";
-    let statustext_a= "";
+    let statustext_a = "";
     let time_m = ''
     let time_a = ''
 
@@ -58,8 +58,8 @@ Page({
     })
   },
 
-//从后台调取数据
-  getList: function(e) {
+  //从后台调取数据
+  getList: function (e) {
     let that = this
     let params = {}
     http.post({
@@ -79,13 +79,13 @@ Page({
   },
 
   //定义并判断签到状态
-  getStatus: function() {
+  getStatus: function () {
     let mystatus = {};
     let arr = this.data.lists;
     let my_c = {}
 
     for (let i = 0; i < arr.length; i++) {
-      let j = (arr[i].time).substr(8, 2)-1
+      let j = (arr[i].time).substr(8, 2) - 1
       my_c[j + ''] = j
       let date = (arr[i].time).substr(0, 10)
       let ma = ''
@@ -129,16 +129,16 @@ Page({
       let res_m = this.data.mystatus['m_' + j]
       let res_a = this.data.mystatus['a_' + j]
 
-      if ((typeof (res_m) == 'undefined' || res_m == null) && (typeof (res_a) == 'undefined' || res_a == null)){
+      if ((typeof (res_m) == 'undefined' || res_m == null) && (typeof (res_a) == 'undefined' || res_a == null)) {
         my[j] = null
       } else {
-        if (res_m && res_a && res_m.status && res_a.status){
+        if (res_m && res_a && res_m.status && res_a.status) {
           my[j] = 1
-        }else{
+        } else {
           my[j] = 0
         }
       }
-      
+
     }
     this.setData({
       my_status: my
@@ -146,8 +146,8 @@ Page({
     console.log(mystatus)
   },
 
-  
-  getCount:function(){
+
+  getCount: function () {
     let date = new Date();
     let i = date.getDate()
     console.log(i)

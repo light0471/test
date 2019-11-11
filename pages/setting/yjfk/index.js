@@ -23,17 +23,17 @@ Page({
   onLoad: function (options) {
     var that = this;
     this.getList()
-      wx.getStorage({
-          key: 'skins',
-          success: function (res) {
-              that.setData({
-                  SkinStyle: res.data
-              })
-          },
-      })
+    wx.getStorage({
+      key: 'skins',
+      success: function (res) {
+        that.setData({
+          SkinStyle: res.data
+        })
+      },
+    })
   },
   getUserInfo: function (e) {
-    console.log("===="+e)
+    console.log("====" + e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
@@ -68,8 +68,8 @@ Page({
   },
   getList: function (e) {
     let that = this
-    let params = { search_key: this.data.search_key}
-    console.log(111,params)
+    let params = { search_key: this.data.search_key }
+    console.log(111, params)
     http.post({
       url: config.service.list_yjfk,
       data: params
@@ -82,7 +82,7 @@ Page({
       console.log(res)
     })
   },
-  
+
   creatyj(e) {
     wx.navigateTo({
       url: './yjfk/index',

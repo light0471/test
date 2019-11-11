@@ -1,5 +1,6 @@
 <scroll-view scroll-y class="DrawerPage {{modalName=='viewModal'?'show':''}}">
-  <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText">返回</view>
+  <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+    <view slot="backText">返回</view>
     <view slot="content">娱乐项目</view>
   </cu-custom>
 
@@ -32,7 +33,7 @@
         <view class="text-grey text-xs">{{item.time}}</view>
         <!-- <view class="cu-tag round bg-grey sm">5</view> -->
       </view>
-      
+
       <view class="move">
         <view class="bg-grey">置顶</view>
         <view class="bg-red">删除</view>

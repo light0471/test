@@ -1,7 +1,7 @@
 <!--pages/location/index.wxml-->
 <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
-<view slot="content">搜索</view>
-	<view slot="backText">返回</view>
+  <view slot="content">搜索</view>
+  <view slot="backText">返回</view>
 </cu-custom>
 <view class='address' bindtap='onChangeAddress'>
- </view>
+</view>

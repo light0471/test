@@ -1,42 +1,42 @@
 <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}" bindtap="back">
-	<view slot="backText">返回</view>
-	<view slot="content">创建娱乐项目</view>
+  <view slot="backText">返回</view>
+  <view slot="content">创建娱乐项目</view>
 </cu-custom>
 <form>
-	<view class="cu-form-group margin-top">
-		<view class="title">主题</view>
-		<input placeholder="" bindinput="inputTyping"></input>
-	</view>
-	
-	<view class="cu-form-group margin-top">
-		<view class="title">娱乐项目</view>
-		<picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
-			<view class="picker">
-				{{index?picker[index]:'篮球'}}
-			</view>
-		</picker>
-	</view>
-    <view class="cu-form-group">
-		<view class="title">日期</view>
-		<picker mode="date" value="{{date}}" start="2015-09-01" end="2020-09-01" bindchange="DateChange">
-			<view class="picker">
-				{{date}}
-			</view>
-		</picker>
-	</view>
-	<view class="cu-form-group">
-		<view class="title">时间</view>
-		<picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="TimeChange">
-			<view class="picker">
-				{{time}}
-			</view>
-		</picker>
-	</view>
-	<view class="cu-form-group margin-top">
-		<textarea maxlength="-1" bindinput="textareaAInput" placeholder="地址"></textarea>
-	</view>
+  <view class="cu-form-group margin-top">
+    <view class="title">主题</view>
+    <input placeholder="" bindinput="inputTyping"></input>
+  </view>
 
-    <view class="padding-xl">
-        <button class="cu-btn block bg-blue margin-tb-sm lg" bindtap="release">发布</button>
-    </view>
+  <view class="cu-form-group margin-top">
+    <view class="title">娱乐项目</view>
+    <picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+      <view class="picker">
+        {{index?picker[index]:'篮球'}}
+      </view>
+    </picker>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">日期</view>
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2020-09-01" bindchange="DateChange">
+      <view class="picker">
+        {{date}}
+      </view>
+    </picker>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">时间</view>
+    <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="TimeChange">
+      <view class="picker">
+        {{time}}
+      </view>
+    </picker>
+  </view>
+  <view class="cu-form-group margin-top">
+    <textarea maxlength="-1" bindinput="textareaAInput" placeholder="地址"></textarea>
+  </view>
+
+  <view class="padding-xl">
+    <button class="cu-btn block bg-blue margin-tb-sm lg" bindtap="release">发布</button>
+  </view>
 </form>

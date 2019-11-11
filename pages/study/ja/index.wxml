@@ -1,7 +1,7 @@
 <!--pages/study/ja/index.wxml-->
 <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
-<view slot="content">课件下载</view>
-	<view slot="backText">返回</view>
+  <view slot="content">课件下载</view>
+  <view slot="backText">返回</view>
 </cu-custom>
 <view>
   <swiper class="screen-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">

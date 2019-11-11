@@ -4,12 +4,12 @@ page {
   overflow: hidden;
 }
 
-.zi_font{
+.zi_font {
   font-size: 35rpx !important;
   font-weight: 600;
 }
 
-.z_line{
+.z_line {
   border-bottom: 1rpx solid #d3d3d3;
 }
 

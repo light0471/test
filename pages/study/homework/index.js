@@ -2,9 +2,9 @@
 var config = require('../../utils/config.js');
 var http = require('../../utils/http.js');
 Page({
-  data: { 
-    lists:[],
-   
+  data: {
+    lists: [],
+
   },
 
   SetShadow(e) {
@@ -42,19 +42,19 @@ Page({
   },
 
   //点击出现弹框
-  upLoad: function(e) {
+  upLoad: function (e) {
     this.setData({
       modalName: e.currentTarget.dataset.target
     })
   },
 
   //查看附件图片
-  showImg: function(e) {
+  showImg: function (e) {
     wx.previewImage({
       urls: [e.currentTarget.dataset.url],
     })
   },
-  
+
   //取消
   hideModal(e) {
     this.setData({
@@ -63,9 +63,9 @@ Page({
   },
 
   //下载
-  downLoad: function() {
+  downLoad: function () {
     wx.chooseImage({
-      success: function(res) {
+      success: function (res) {
         const tempFilePaths = res.tempFilePaths
         wx.saveFile({
           tempFilePath: tempFilePaths[0],

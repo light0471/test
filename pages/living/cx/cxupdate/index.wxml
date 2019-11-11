@@ -1,15 +1,15 @@
 <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}" bindtap="back">
-	<view slot="backText">返回</view>
-	<view slot="content">新增出行</view>
+  <view slot="backText">返回</view>
+  <view slot="content">新增出行</view>
 </cu-custom>
 <form>
-	<view class="cu-form-group margin-top">
-		<view class="title">人员</view>
-		<input placeholder="" bindinput="inputTyping"></input>
-	</view>
-	
-	<view class="cu-form-group margin-top">
-		<view class="title">交通工具</view>
+  <view class="cu-form-group margin-top">
+    <view class="title">人员</view>
+    <input placeholder="" bindinput="inputTyping"></input>
+  </view>
+
+  <view class="cu-form-group margin-top">
+    <view class="title">交通工具</view>
     <picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
       <view class="picker">
         {{index?picker[index]:'火车'}}
@@ -17,7 +17,7 @@
     </picker>
   </view>
   <view class="cu-form-group">
-		<view class="title">到站地</view>
+    <view class="title">到站地</view>
     <picker bindchange="VehiclePickerChange" value="{{vehicle_index}}" range="{{vehicle_picker}}">
       <view class="picker">
         {{vehicle_index?vehicle_picker[vehicle_index]:'太原武宿机场'}}
@@ -45,6 +45,6 @@
   </view>
 
   <view class="padding-xl">
-      <button class="cu-btn block bg-blue margin-tb-sm lg" bindtap="release">确定</button>
+    <button class="cu-btn block bg-blue margin-tb-sm lg" bindtap="release">确定</button>
   </view>
 </form>

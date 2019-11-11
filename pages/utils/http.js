@@ -3,7 +3,7 @@
 const request = function (method) {
 
   return (obj, obj_method) => {
-    
+
     wx.request({
       url: encodeURI(obj.url),
       method: method,
@@ -13,7 +13,7 @@ const request = function (method) {
         'content-type': 'application/x-www-form-urlencoded'
       },
       success: (res) => {
-       
+
         if (res.data.items) {
           let res_json = JSON.parse(decodeURIComponent(res.data.items));
           res.data.items = res_json
@@ -23,7 +23,7 @@ const request = function (method) {
         }
       },
       fail: () => {
-        
+
       },
       complete: () => {
         // util.hideLoading()

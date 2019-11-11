@@ -8,34 +8,34 @@ Page({
 
   },
 
-  
+
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      var _page = this;
-      wx.chooseLocation({
-        success: function (res) {
-          _page.setData({
-            chooseAddress: res.name
-          });
-          
-         let pages = getCurrentPages()
-         let prevPage = pages[pages.length -2]
-         prevPage.setData({
-           location: res.name
-         })
-          wx.navigateBack({
-            location: res.name
-          })
-        },
-        fail: function (err) {
-          console.log(err)
+    var _page = this;
+    wx.chooseLocation({
+      success: function (res) {
+        _page.setData({
+          chooseAddress: res.name
+        });
 
-        }
-      });
- 
+        let pages = getCurrentPages()
+        let prevPage = pages[pages.length - 2]
+        prevPage.setData({
+          location: res.name
+        })
+        wx.navigateBack({
+          location: res.name
+        })
+      },
+      fail: function (err) {
+        console.log(err)
+
+      }
+    });
+
   },
 
   /**

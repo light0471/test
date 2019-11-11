@@ -1,6 +1,8 @@
 @import "../setting/com.wxss";
+
 /* pages/setting/grxx/index.wxss */
-.userinfo-avatar{
+
+.userinfo-avatar {
   width: 30px;
   height: 30px;
 }

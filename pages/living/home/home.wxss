@@ -1,15 +1,14 @@
-
-.cardTitle{
+.cardTitle {
   color: rgb(5, 5, 5);
   padding: 90rpx 60rpx;
   font-size: 40rpx;
   font-weight: 300;
   transform: skew(-10deg, 0deg);
   position: relative;
-  text-shadow: 0px 0px 6rpx rgba(255, 255, 255, 0.3)
+  text-shadow: 0px 0px 6rpx rgba(255, 255, 255, 0.3);
 }
 
-.cardTitle::before{
+.cardTitle::before {
   content: "";
   position: absolute;
   width: 60rpx;
@@ -18,7 +17,6 @@
   background-color: rgb(5, 5, 5);
   display: block;
   top: 60rpx;
-  left: 50rpx;  
+  left: 50rpx;
   transform: skew(10deg, 0deg);
 }
-

@@ -1,18 +1,18 @@
 <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}" bindtap="back">
-    <view slot="backText">返回</view>
-    <view slot="content">意见反馈</view>
+  <view slot="backText">返回</view>
+  <view slot="content">意见反馈</view>
 </cu-custom>
 
 <form bindsubmit="formSubmit">
- <view class="cu-form-group">
-   <textarea  bindinput="textareaAInput" placeholder="请输入您的意见："></textarea>
- </view>
- <view class="cu-form-group" >
+  <view class="cu-form-group">
+    <textarea bindinput="textareaAInput" placeholder="请输入您的意见："></textarea>
+  </view>
+  <view class="cu-form-group">
     <view class="title">是否匿名提交</view>
-		<switch bindchange="switchff"></switch>
- </view>
- <!-- <open-data type="userNickName" lang="zh_CN"></open-data> -->
- <view class="padding-xl">
-      <button class="cu-btn block bg-blue margin-tb-sm lg" open-type='getUserInfo' lang="zh_CN" bindgetuserinfo="onGotUserInfo">确定</button>
+    <switch bindchange="switchff"></switch>
+  </view>
+  <!-- <open-data type="userNickName" lang="zh_CN"></open-data> -->
+  <view class="padding-xl">
+    <button class="cu-btn block bg-blue margin-tb-sm lg" open-type='getUserInfo' lang="zh_CN" bindgetuserinfo="onGotUserInfo">确定</button>
   </view>
 </form>
