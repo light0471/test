@@ -7,6 +7,11 @@ Page({
     switchdata: "",
     nickName:""
   },
+  back() {
+    wx.redirectTo({
+      url: '',
+    })
+  },
   textareaAInput(e) {
     this.setData({
       textareaAValue: e.detail.value
